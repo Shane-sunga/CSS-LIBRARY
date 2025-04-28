@@ -76,15 +76,15 @@
             <form class="form">
                 <div class="form-cont">
                     <div class="input-cont">
-                        <label class="input-label">Text (Alphabet)</label>
+                        <asp:Label ID="Label1" runat="server" class="input-label">Text (Alphabet)</asp:Label>
                         <input type="text" class="form-tb-text" placeholder="Sample placeholder" required>
                     </div>
                     <div class="input-cont">
-                        <label class="input-label">Text</label>
+                        <asp:Label ID="Label2" runat="server" class="input-label">Text</asp:Label>
                         <input type="text" class="form-tb-text-shuffle" placeholder="Sample placeholder" required>
                     </div>
                     <div class="input-cont">
-                        <label class="input-label">Text (Special Character)</label>
+                        <asp:Label ID="Label3" class="input-label runat="server">Text (Special Character)</asp:Label>
                         <input type="text" class="form-tb-text-char" placeholder="Sample placeholder" required>
                     </div>
                 </div>

@@ -141,6 +141,11 @@
     <Content Include="favicon.ico" />
     <Content Include="Form.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="Label.aspx" />
+    <Content Include="Loading.aspx" />
+    <Content Include="Modal.aspx" />
+    <Content Include="Navbar.aspx" />
+    <Content Include="Pagination.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -210,8 +215,11 @@
     <Content Include="Scripts\WebForms\WebForms.js" />
     <Content Include="Scripts\WebForms\WebParts.js" />
     <Content Include="Scripts\WebForms\WebUIValidation.js" />
+    <Content Include="Sidebar.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="Table.aspx" />
     <Content Include="TestingElem.aspx" />
+    <Content Include="Textarea.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -279,7 +287,49 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Label.aspx.cs">
+      <DependentUpon>Label.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Label.aspx.designer.cs">
+      <DependentUpon>Label.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.aspx.cs">
+      <DependentUpon>Loading.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Loading.aspx.designer.cs">
+      <DependentUpon>Loading.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modal.aspx.cs">
+      <DependentUpon>Modal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modal.aspx.designer.cs">
+      <DependentUpon>Modal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Navbar.aspx.cs">
+      <DependentUpon>Navbar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Navbar.aspx.designer.cs">
+      <DependentUpon>Navbar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Pagination.aspx.cs">
+      <DependentUpon>Pagination.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Pagination.aspx.designer.cs">
+      <DependentUpon>Pagination.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sidebar.aspx.cs">
+      <DependentUpon>Sidebar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sidebar.aspx.designer.cs">
+      <DependentUpon>Sidebar.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -294,12 +344,26 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="Table.aspx.cs">
+      <DependentUpon>Table.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Table.aspx.designer.cs">
+      <DependentUpon>Table.aspx</DependentUpon>
+    </Compile>
     <Compile Include="TestingElem.aspx.cs">
       <DependentUpon>TestingElem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="TestingElem.aspx.designer.cs">
       <DependentUpon>TestingElem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Textarea.aspx.cs">
+      <DependentUpon>Textarea.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Textarea.aspx.designer.cs">
+      <DependentUpon>Textarea.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
