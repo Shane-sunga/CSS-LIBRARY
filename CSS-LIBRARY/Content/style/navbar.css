@@ -420,6 +420,10 @@
     display: block;
 }
 
+.top-nav-links-sub > .nav-dropdown:last-child .nav-dropdown-content {
+    left: -85px;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .menu-icon {

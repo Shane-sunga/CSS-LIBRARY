@@ -1,90 +1,21 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Form.aspx.cs" Inherits="CSS_LIBRARY.Form" %>
+﻿<%@ Page Title="Form" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Form.aspx.cs" Inherits="CSS_LIBRARY.About" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Forms Text Box</title>
-    <link href="Content/style/styles.css" rel="stylesheet" />
-    <script type="module" src="Scripts/js/script.js"></script>
-    <script type="module" src="Scripts/js/dashboard.js"></script>
-   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
-
-</head>
-<body>
-      <div class="top-navbar-sub" runat="server">
-        <div class="comp-logs-container">
-          <div class="menu-toggle">☰</div>
-          <span>Top Navbar</span>
-        </div>
-
-        <div class="menu-icon">
-            <i class="bi bi-list"></i>
-        </div>
-
-        <ul class="top-nav-links-sub">
-           <li><a href="Dashboard.aspx">Home</a></li>
-           <li class="nav-dropdown">
-             <a href="Modal.aspx">Modals<i class="bi bi-chevron-down"></i></a>
-             <ul class="nav-dropdown-content">
-               <li><a href="Alert.aspx">Alert</a></li>
-               <li><a href="Form.aspx">Form</a></li>
-               <li><a href="Label.aspx">Label</a></li>
-               <li><a href="Navbar.aspx">Navbar</a></li>
-               <li><a href="Sidebar.aspx">Sidebar</a></li>
-             </ul>
-           </li>
-           <li class="nav-dropdown">
-             <a href="Cards.aspx">Cards <i class="bi bi-chevron-down"></i></a>
-             <ul class="nav-dropdown-content">
-               <li><a href="Loading.aspx">Loadings</a></li>
-               <li><a href="Pagination.aspx">Pagination</a></li>
-               <li><a href="Table.aspx">Table</a></li>
-               <li><a href="Textarea.aspx">Texarea</a></li>
-             </ul>
-            </li>
-        </ul>
-    </div>
-
-    <div class="sidebar">
-      <button class="close-btn">✖</button>
-      <h2>Sidebar</h2>
-      <a href="Dashboard.aspx">Dashboard</a>
-      <a href="Alert.aspx">Alerts</a>
-      <a href="Button.aspx">Buttons</a>
-      <a href="Cards.aspx">Cards</a>
-      <a href="Form.aspx">Forms</a>
-      <a href="Loading.aspx">Loadings</a>
-      <a href="Modal.aspx">Modals</a>
-      <a href="Navbar.aspx">Navbars</a>
-      <a href="Table.aspx">Table</a>
-      <a href="Textarea.aspx">Textarea</a>
-      <a href="Label.aspx">Label</a>
-      <a href="Sidebar.aspx">Sidebar</a>
-      <a href="Pagiation.aspx">Pagination</a>
-    </div>
-
-
-<button class="back-to-top">
-    <i class="bi bi-chevron-double-up"></i> <span>Back To Top</span>
-  </button>
-
-    <div class="container">
+<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
+    <main aria-labelledby="title">        
+         <div class="container">
         <div class="style-exp">
             <form class="form">
                 <div class="form-cont">
                     <div class="input-cont">
-                        <asp:Label ID="Label1" runat="server" class="input-label">Text (Alphabet)</asp:Label>
+                        <label class="input-label">Text (Alphabet)</label>
                         <input type="text" class="form-tb-text" placeholder="Sample placeholder" required>
                     </div>
                     <div class="input-cont">
-                        <asp:Label ID="Label2" runat="server" class="input-label">Text</asp:Label>
+                        <label class="input-label">Text</label>
                         <input type="text" class="form-tb-text-shuffle" placeholder="Sample placeholder" required>
                     </div>
                     <div class="input-cont">
-                        <asp:Label ID="Label3" class="input-label runat="server">Text (Special Character)</asp:Label>
+                        <label class="input-label">Text (Special Character)</label>
                         <input type="text" class="form-tb-text-char" placeholder="Sample placeholder" required>
                     </div>
                 </div>
@@ -1476,6 +1407,8 @@
             </form>
         </div>
     </div>
+ 
 
-</body>
-</html>
+    </main>
+</asp:Content>
+

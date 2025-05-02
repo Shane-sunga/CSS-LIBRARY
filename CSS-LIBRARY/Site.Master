@@ -6,64 +6,98 @@
 <head runat="server">
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%: Page.Title %> - My ASP.NET Application</title>
-
-    <asp:PlaceHolder runat="server">
-        <%: Scripts.Render("~/bundles/modernizr") %>
-    </asp:PlaceHolder>
-
-    <webopt:bundlereference runat="server" path="~/Content/css" />
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <title><%: Page.Title %></title>
+    <link href="Content/style/styles.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 <body>
     <form runat="server">
-        <asp:ScriptManager runat="server">
-            <Scripts>
-                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
-                <%--Framework Scripts--%>
-                <asp:ScriptReference Name="MsAjaxBundle" />
-                <asp:ScriptReference Name="jquery" />
-                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
-                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
-                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
-                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
-                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
-                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
-                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
-                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
-                <asp:ScriptReference Name="WebFormsBundle" />
-                <%--Site Scripts--%>
-            </Scripts>
-        </asp:ScriptManager>
-
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" runat="server" href="~/">Application name</a>
-                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/About">About</a></li>
-                        <li class="nav-item"><a class="nav-link" runat="server" href="~/Contact">Contact</a></li>
-                    </ul>
-                </div>
+        <div class="top-navbar-sub">
+            <div class="comp-logs-container">
+                <div class="menu-toggle">☰</div>
+                <span>Top Navbar</span>
             </div>
-        </nav>
-        <div class="container body-content">
-            <asp:ContentPlaceHolder ID="MainContent" runat="server">
-            </asp:ContentPlaceHolder>
-            <hr />
-            <footer>
-                <p>&copy; <%: DateTime.Now.Year %> - My ASP.NET Application</p>
-            </footer>
+
+            <div class="menu-icon">
+                <i class="bi bi-list"></i>
+            </div>
+            <ul class="top-nav-links-sub">
+                <li>
+                    <asp:HyperLink ID="HyperLink1" NavigateUrl="~/Dashboard" runat="server">Home</asp:HyperLink>
+                </li>
+                <li class="nav-dropdown">
+                    <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/Modal">Modals<i class="bi bi-chevron-down"></i></asp:HyperLink>
+                    <ul class="nav-dropdown-content">
+                        <li>
+                            <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Alert">Alert</asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink4" runat="server" NavigateUrl="~/Form">Form</asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink5" runat="server" NavigateUrl="~/Label">Label</asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink6" runat="server" NavigateUrl="~/Navbar">Navbar</asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink7" runat="server" NavigateUrl="~/Sidebar">Sidebar</asp:HyperLink>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-dropdown">
+                    <asp:HyperLink ID="HyperLink8" runat="server" NavigateUrl="~/Cards">Cards <i class="bi bi-chevron-down"></i></asp:HyperLink>
+                    <ul class="nav-dropdown-content">
+                        <li>
+                            <asp:HyperLink ID="HyperLink9" runat="server" NavigateUrl="~/Loading">Loading</asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink10" runat="server" NavigateUrl="~/Pagination">Pagination</asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink11" runat="server" NavigateUrl="~/Table">Table</asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink12" runat="server" NavigateUrl="~/Textarea">Textarea</asp:HyperLink>
+                        </li>
+                        <li>
+                            <asp:HyperLink ID="HyperLink13" runat="server" NavigateUrl="~/Button">Button</asp:HyperLink>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
         </div>
+
+
+        <div class="sidebar">
+            <asp:Button ID="Button1" runat="server" Text="✖" CssClass="close-btn" />
+
+            <h2>Sidebar</h2>
+
+            <a href="Dashboard.aspx">Dashboard</a>
+            <a href="Alert.aspx">Alerts</a>
+            <a href="Button.aspx">Buttons</a>
+            <a href="Cards.aspx">Cards</a>
+            <a href="Form.aspx">Forms</a>
+            <a href="Loading.aspx">Loadings</a>
+            <a href="Modal.aspx">Modals</a>
+            <a href="Navbar.aspx">Navbars</a>
+            <a href="Table.aspx">Table</a>
+            <a href="Textarea.aspx">Textarea</a>
+            <a href="Label.aspx">Label</a>
+            <a href="Sidebar.aspx">Sidebar</a>
+            <a href="Pagiation.aspx">Pagination</a>
+        </div>
+        <button class="back-to-top">
+            <i class="bi bi-chevron-double-up"></i><span>Back To Top</span>
+        </button>
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        </asp:ContentPlaceHolder>
+
     </form>
-    <asp:PlaceHolder runat="server">
-        <%: Scripts.Render("~/Scripts/bootstrap.js") %>
-    </asp:PlaceHolder>
+<script type="module" src="Scripts/js/script.js"></script>
+<script type="module" src="Scripts/js/dashboard.js"></script>
 </body>
 </html>

@@ -22,6 +22,9 @@
   gap: 20px;
   font-weight: 600;
 }
+.comp-logs-container span{
+   cursor:pointer;
+}
 
 .code-style {
   background: #000000;
