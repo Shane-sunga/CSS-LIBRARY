@@ -16,7 +16,9 @@ document.addEventListener("DOMContentLoaded", function () {
             modal.style.display = "none";
             document.body.style.overflow = "";
         });
+
     });
+
 
    // Slide modals
 document.querySelectorAll(".slideLeft-btn-modal").forEach((leftSlideBtn, index) => {
@@ -37,13 +39,6 @@ document.querySelectorAll(".slideLeft-btn-modal").forEach((leftSlideBtn, index) 
     });
 
 });
-
-});
-
-
-
-document.addEventListener("DOMContentLoaded", function () {
-
 
     document.querySelectorAll(".medium-btn-modal").forEach(button => {
         button.addEventListener("click", function () {
@@ -94,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
             closeModal("half-right-modal");
         });
     })
+
 });
 
 function openModal(modalClass) {

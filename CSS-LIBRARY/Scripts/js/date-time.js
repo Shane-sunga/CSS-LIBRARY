@@ -2,13 +2,13 @@
 document.addEventListener("DOMContentLoaded", function(){
     function updateClock() {
         const now = new Date();
-        const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' }); 
-        document.querySelector(".clock").textContent = timeString;
-        document.querySelector(".loading").style.display = "none"; 
+        const timeString = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        document.querySelector("#clock").textContent = timeString;  // <-- FIXED
+        document.querySelector(".loading").style.display = "none";
     }
-    
+
     setInterval(updateClock, 1000);
-    updateClock();  
+    updateClock();
 
 
 });
@@ -27,7 +27,7 @@ window.addEventListener("DOMContentLoaded", function () {
     // Populate Month Dropdown
     const months = [
         { name: "January", days: 31 },
-        { name: "February", days: 28 }, // Default, will update for leap years
+        { name: "February", days: 28 },
         { name: "March", days: 31 },
         { name: "April", days: 30 },
         { name: "May", days: 31 },
@@ -45,77 +45,65 @@ window.addEventListener("DOMContentLoaded", function () {
         monthSelect.appendChild(option);
     });
 
-    // Populate Year Dropdown (From 1900 to Current Year)
     const currentYear = new Date().getFullYear();
     for (let i = currentYear; i >= 1900; i--) {
         let option = new Option(i, i);
         yearSelect.appendChild(option);
     }
 
-    // Function to Update Day Dropdown Based on Month & Year
     function updateDays() {
         let selectedMonth = parseInt(monthSelect.value);
         let selectedYear = parseInt(yearSelect.value);
-        let daysInMonth = 31; // Default
+        let daysInMonth = 31;
 
         if (selectedMonth) {
             daysInMonth = months[selectedMonth - 1].days;
-
-            // Handle February (Leap Year Check)
             if (selectedMonth === 2) {
-                if (selectedYear % 4 === 0 && (selectedYear % 100 !== 0 || selectedYear % 400 === 0)) {
-                    daysInMonth = 29; // Leap year
-                } else {
-                    daysInMonth = 28;
-                }
+                daysInMonth = (selectedYear % 4 === 0 && (selectedYear % 100 !== 0 || selectedYear % 400 === 0)) ? 29 : 28;
             }
         }
 
-        // Store previous selected day
         let previousDay = parseInt(daySelect.value);
-
-        // Clear existing days
         daySelect.innerHTML = '<option value="">DD</option>';
         for (let i = 1; i <= daysInMonth; i++) {
             let option = new Option(i, i.toString().padStart(2, '0'));
             daySelect.appendChild(option);
         }
 
-        // Restore previous valid day if available
         if (previousDay && previousDay <= daysInMonth) {
             daySelect.value = previousDay.toString().padStart(2, '0');
         } else {
-            daySelect.value = ""; // Reset if invalid
+            daySelect.value = "";
         }
 
-        combineDate(); // Update full date after changing days
+        displayDate(); // Show separate values in console
     }
 
-    // Function to Combine Date and Store in Hidden Input
-    function combineDate() {
+    function displayDate() {
         let day = daySelect.value;
         let month = monthSelect.value;
         let year = yearSelect.value;
 
         if (day && month && year) {
-            fullDateInput.value = `${year}-${month}-${day}`;
+            console.log("Day:", day);
+            console.log("Month:", month);
+            console.log("Year:", year);
         }
     }
 
-    // Attach event listeners
-    daySelect.addEventListener("change", combineDate);
+    // Attach listeners
+    daySelect.addEventListener("change", displayDate);
     monthSelect.addEventListener("change", () => {
         updateDays();
-        combineDate();
+        displayDate();
     });
     yearSelect.addEventListener("change", () => {
         updateDays();
-        combineDate();
+        displayDate();
     });
 
-    // Initialize Days Dropdown **AFTER** event listeners are set
+    // Initial population
     updateDays();
 });
-
 
 

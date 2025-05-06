@@ -8,7 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %></title>
     <link href="Content/style/styles.css" rel="stylesheet" />
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
+
 
 </head>
 <body>
@@ -89,15 +90,16 @@
             <a href="Sidebar.aspx">Sidebar</a>
             <a href="Pagiation.aspx">Pagination</a>
         </div>
-        <button class="back-to-top">
-            <i class="bi bi-chevron-double-up"></i><span>Back To Top</span>
-        </button>
+
 
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         </asp:ContentPlaceHolder>
-
     </form>
-<script type="module" src="Scripts/js/script.js"></script>
-<script type="module" src="Scripts/js/dashboard.js"></script>
+
+    <script type="module" src="Scripts/js/script.js"></script>
+    <script type="module" src="Scripts/js/dashboard.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+
 </body>
 </html>
