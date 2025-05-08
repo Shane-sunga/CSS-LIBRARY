@@ -9,6 +9,8 @@ namespace CSS_LIBRARY
 {
     public partial class Label : System.Web.UI.Page
     {
+        internal string Text;
+
         protected void Page_Load(object sender, EventArgs e)
         {
 

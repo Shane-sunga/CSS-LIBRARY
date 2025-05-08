@@ -117,12 +117,5 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-$(document).on('click', '.dropdown-item', function () {
-    const selectedText = $(this).text();
-    const dropdown = $(this).closest('.dropdown');
-    dropdown.find('.dropdown-select p').text(selectedText);
-    dropdown.find('.dropdown-select').attr('data-value', selectedText);
-});
-
 
 
