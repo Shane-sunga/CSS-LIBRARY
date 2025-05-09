@@ -342,8 +342,15 @@
 
                 <div class="container">
                     <div class="style-exp">
+
                         <asp:Panel CssClass="form" runat="server">
+
                             <asp:Panel CssClass="form-cont" runat="server">
+                                <div class="input-cont">
+                                    <label class="input-label">Dropdown</label>
+                                    <asp:DropDownList ID="ddlCities" runat="server" CssClass="dropdown-select">
+                                    </asp:DropDownList>
+                                </div>
                                 <div class="input-cont">
                                     <label class="input-label">Dropdown</label>
                                     <asp:Panel CssClass="dropdown" runat="server">

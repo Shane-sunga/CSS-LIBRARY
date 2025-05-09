@@ -38,9 +38,34 @@ namespace CSS_LIBRARY
                 LoadStates();
                 LoadCities();
                 LoadCountries();
+                BindCityDropdown();
             }
         }
 
+
+        private void BindCityDropdown()
+        {
+            // Create DataTable with ID and City columns
+            DataTable dt = new DataTable();
+            dt.Columns.Add("ID", typeof(int));
+            dt.Columns.Add("City", typeof(string));
+
+            // Add sample data
+            dt.Rows.Add(1, "New York");
+            dt.Rows.Add(2, "Los Angeles");
+            dt.Rows.Add(3, "Chicago");
+            dt.Rows.Add(4, "Houston");
+            dt.Rows.Add(5, "Miami");
+
+            // Bind to DropDownList
+            ddlCities.DataSource = dt;
+            ddlCities.DataTextField = "City";
+            ddlCities.DataValueField = "ID";
+            ddlCities.DataBind();
+
+            // Optional: Add default option
+            ddlCities.Items.Insert(0, new ListItem("-- Select a City --", ""));
+        }
         private void LoadStates()
         {
             string connectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
