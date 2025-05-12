@@ -1,4 +1,4 @@
-﻿<%@ Page Title="Modal" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Modal.aspx.cs" Inherits="CSS_LIBRARY.About" %>
+﻿<%@ Page Title="Modal" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Modal.aspx.cs" Inherits="CSS_LIBRARY.Modal" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
 
@@ -29,9 +29,7 @@
                             <button class="okay-m-btn">Okay</button>
                             <button class="close-m-btn">Close</button>
                         </div>
-
                     </div>
-
                 </asp:Panel>
             </div>
         </div>
@@ -41,28 +39,34 @@
                 <div class="copy-btn-cont">
                     <i class="bi bi-clipboard copyButton">Copy</i>
                 </div>
-                <pre><code class="codeBlock">
-              <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"medium-btn-modal"</span><span class="code-html">&gt;</span>Open Medium<span class="code-html">&lt;/button&gt;</span>
-                  <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-overlay medium-modal"</span><span class="code-html">&gt;</span>
-                   <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-cont-medium"</span><span class="code-html">&gt;</span>
-                       <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-header-cont"</span><span class="code-html">&gt;</span>
-                          <span class="code-html">&lt;span</span> <span class="code-attr">class</span>=<span class="code-value">"close-btn-medium"</span><span class="code-html">&gt;</span>&#38;times&#59;<span class="code-html">&lt;/span&gt;</span>
-                              <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-cont-title"</span><span class="code-html">&gt;</span>
-                                 <span class="code-html">&lt;h2</span> <span class="code-attr">class</span>=<span class="code-value">"modal-title-txt"</span><span class="code-html">&gt;</span>Small Modal<span class="code-html">&lt;/h2&gt;</span>
-                              <span class="code-html">&lt;/div&gt;</span>
-                          <span class="code-html">&lt;/div&gt;</span>
-                          <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-body-cont"</span><span class="code-html">&gt;</span>
-                          <span class="code-html">&lt;p</span> <span class="code-attr">class</span>=<span class="code-value">"card-text"</span><span class="code-html">&gt;</span>
-                              Lorem Ipsum.
-                          <span class="code-html">&lt;/p&gt;</span>
-                          <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-footer-cont"</span><span class="code-html">&gt;</span>
-                          <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"okay-m-btn"</span><span class="code-html">&gt;</span>Okay<span class="code-html">&lt;/h2&gt;</span>
-                          <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"close-m-btn"</span><span class="code-html">&gt;</span>Close<span class="code-html">&lt;/h2&gt;</span>
-                              <span class="code-html">&lt;/div&gt;</span>
-                       <span class="code-html">&lt;/div&gt;</span>
-                  <span class="code-html">&lt;/div&gt;</span>
-                <span class="code-html">&lt;/div&gt;</span>
-          </code></pre>
+               <pre><code class="codeBlock">
+                    <span class="code-html">&lt;button</span> <span class="code-attr">type</span>=<span class="code-value">"button"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">class</span>=<span class="code-value">"medium-btn-modal"</span><span class="code-html">&gt;</span>Open Medium Modal<span class="code-html">&lt;/button&gt;</span>
+                    <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"modal-overlay medium-modal"</span><span class="code-html">&gt;</span>
+                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-cont-medium"</span><span class="code-html">&gt;</span>
+                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-header-cont"</span><span class="code-html">&gt;</span>
+                                <span class="code-html">&lt;asp:Label</span> <span class="code-attr">CssClass</span>=<span class="code-value">"close-btn-medium"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>&#38;times&#59;<span class="code-html">&lt;/asp:Label&gt;</span>
+
+                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-cont-title"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;h2</span> <span class="code-attr">class</span>=<span class="code-value">"modal-title-txt"</span><span class="code-html">&gt;</span>Medium Modal<span class="code-html">&lt;/h2&gt;</span>
+                                <span class="code-html">&lt;/div&gt;</span>
+                            <span class="code-html">&lt;/div&gt;</span>
+
+                            <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"modal-body-cont"</span><span class="code-html">&gt;</span>
+                                <span class="code-html">&lt;p&gt;</span>
+                                    Lorem ipsumodal-body-contipisicing elit. -body-contipisicing elit. 
+                                    m-body-contipisicing elit. m-body-contipisicing elit. m-body-contipisicing elit.
+                                    mmodal-body-contmodal-body-contmmodal-body-contmodal-body-contmodal-body-contodal-body-contQuisquam,
+                                    quod.
+                                <span class="code-html">&lt;/p&gt;</span>
+                            <span class="code-html">&lt;/asp:Panel&gt;</span>
+
+                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-footer-cont"</span><span class="code-html">&gt;</span>
+                                <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"okay-m-btn"</span><span class="code-html">&gt;</span>Okay<span class="code-html">&lt;/button&gt;</span>
+                                <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"close-m-btn"</span><span class="code-html">&gt;</span>Close<span class="code-html">&lt;/button&gt;</span>
+                            <span class="code-html">&lt;/div&gt;</span>
+                        <span class="code-html">&lt;/div&gt;</span>
+                    <span class="code-html">&lt;/asp:Panel&gt;</span>
+                </code></pre>
             </div>
         </div>
 
@@ -115,28 +119,30 @@
                     <i class="bi bi-clipboard copyButton">Copy</i>
                 </div>
                 <pre><code class="codeBlock">
-              <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"large-btn-modal"</span><span class="code-html">&gt;</span>Open Large<span class="code-html">&lt;/button&gt;</span>
-                  <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-overlay large-modal"</span><span class="code-html">&gt;</span>
-                   <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-cont-large"</span><span class="code-html">&gt;</span>
-                       <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-header-cont"</span><span class="code-html">&gt;</span>
-                          <span class="code-html">&lt;span</span> <span class="code-attr">class</span>=<span class="code-value">"close-btn-large"</span><span class="code-html">&gt;</span>&#38;times&#59;<span class="code-html">&lt;/span&gt;</span>
-                              <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-cont-title"</span><span class="code-html">&gt;</span>
-                                 <span class="code-html">&lt;h2</span> <span class="code-attr">class</span>=<span class="code-value">"modal-title-txt"</span><span class="code-html">&gt;</span>Small Modal<span class="code-html">&lt;/h2&gt;</span>
-                              <span class="code-html">&lt;/div&gt;</span>
-                          <span class="code-html">&lt;/div&gt;</span>
-                          <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-body-cont"</span><span class="code-html">&gt;</span>
-                          <span class="code-html">&lt;p</span> <span class="code-html">&gt;</span>
-                              Lorem Ipsum.
-                          <span class="code-html">&lt;/p&gt;</span>
-                          <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-footer-cont"</span><span class="code-html">&gt;</span>
-                          <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"okay-m-btn"</span><span class="code-html">&gt;</span>Okay<span class="code-html">&lt;/h2&gt;</span>
-                          <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"close-m-btn"</span><span class="code-html">&gt;</span>Close<span class="code-html">&lt;/h2&gt;</span>
-                              <span class="code-html">&lt;/div&gt;</span>
-                       <span class="code-html">&lt;/div&gt;</span>
-                  <span class="code-html">&lt;/div&gt;</span>
-                <span class="code-html">&lt;/div&gt;</span>
+                    <span class="code-html">&lt;button</span> <span class="code-attr">type</span>=<span class="code-value">"button"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">class</span>=<span class="code-value">"large-btn-modal"</span><span class="code-html">&gt;</span>Open Large Modal<span class="code-html">&lt;/button&gt;</span>
+                    <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"modal-overlay large-modal"</span><span class="code-html">&gt;</span>
+                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-cont-large"</span><span class="code-html">&gt;</span>
+                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-header-cont"</span><span class="code-html">&gt;</span>
+                                <span class="code-html">&lt;asp:Label</span> <span class="code-attr">CssClass</span>=<span class="code-value">"close-btn-large"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>&#38;times&#59;<span class="code-html">&lt;/asp:Label&gt;</span>
 
-          </code></pre>
+                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-cont-title"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;h2</span> <span class="code-attr">class</span>=<span class="code-value">"modal-title-txt"</span><span class="code-html">&gt;</span>Large Modal<span class="code-html">&lt;/h2&gt;</span>
+                                <span class="code-html">&lt;/div&gt;</span>
+                            <span class="code-html">&lt;/div&gt;</span>
+
+                            <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"modal-body-cont"</span><span class="code-html">&gt;</span>
+                                <span class="code-html">&lt;p&gt;</span>
+                                    Lorem ipsumodal-body-contipisicing elit. -body-contipisicing elit. m-body-contipisicing elit.
+                                <span class="code-html">&lt;/p&gt;</span>
+                            <span class="code-html">&lt;/asp:Panel&gt;</span>
+
+                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-footer-cont"</span><span class="code-html">&gt;</span>
+                                <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"okay-m-btn"</span><span class="code-html">&gt;</span>Okay<span class="code-html">&lt;/button&gt;</span>
+                                <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"close-m-btn"</span><span class="code-html">&gt;</span>Close<span class="code-html">&lt;/button&gt;</span>
+                            <span class="code-html">&lt;/div&gt;</span>
+                        <span class="code-html">&lt;/div&gt;</span>
+                    <span class="code-html">&lt;/asp:Panel&gt;</span>
+                </code></pre>
             </div>
         </div>
 
@@ -169,28 +175,25 @@
                     <i class="bi bi-clipboard copyButton">Copy</i>
                 </div>
                 <pre><code class="codeBlock">
-              <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"halfLeft-btn-modal"</span><span class="code-html">&gt;</span>Half-Left Modal<span class="code-html">&lt;/button&gt;</span>
-                  <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-overlay half-left-modal"</span><span class="code-html">&gt;</span>
-                   <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-cont-half-left"</span><span class="code-html">&gt;</span>
-                       <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-header-cont"</span><span class="code-html">&gt;</span>
-                          <span class="code-html">&lt;span</span> <span class="code-attr">class</span>=<span class="code-value">"close-btn-left"</span><span class="code-html">&gt;</span>&#38;times&#59;<span class="code-html">&lt;/span&gt;</span>
-                              <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-cont-title"</span><span class="code-html">&gt;</span>
-                                 <span class="code-html">&lt;h2</span> <span class="code-attr">class</span>=<span class="code-value">"modal-title-txt"</span><span class="code-html">&gt;</span>Small Modal<span class="code-html">&lt;/h2&gt;</span>
-                              <span class="code-html">&lt;/div&gt;</span>
-                          <span class="code-html">&lt;/div&gt;</span>
-                          <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-body-cont"</span><span class="code-html">&gt;</span>
-                          <span class="code-html">&lt;p</span> <span class="code-html">&gt;</span>
-                              Lorem Ipsum.
-                          <span class="code-html">&lt;/p&gt;</span>
-                          <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-footer-cont"</span><span class="code-html">&gt;</span>
-                                 <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"okay-m-btn"</span><span class="code-html">&gt;</span>Okay<span class="code-html">&lt;/h2&gt;</span>
-                                 <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"close-m-btn"</span><span class="code-html">&gt;</span>Close<span class="code-html">&lt;/h2&gt;</span>
-                              <span class="code-html">&lt;/div&gt;</span>
-                       <span class="code-html">&lt;/div&gt;</span>
-                  <span class="code-html">&lt;/div&gt;</span>
-                <span class="code-html">&lt;/div&gt;</span>
+                    <span class="code-html">&lt;button</span> <span class="code-attr">type</span>=<span class="code-value">"button"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">class</span>=<span class="code-value">"halfLeft-btn-modal"</span><span class="code-html">&gt;</span>Open Half-Left Modal<span class="code-html">&lt;/button&gt;</span>
+                    <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"modal-overlay half-left-modal"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
 
-          </code></pre>
+                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-cont-half-left"</span><span class="code-html">&gt;</span>
+                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-header-title"</span><span class="code-html">&gt;</span>
+                                <span class="code-html">&lt;asp:Label</span> <span class="code-attr">CssClass</span>=<span class="code-value">"close-btn-left"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>&#38;times&#59;<span class="code-html">&lt;/asp:Label&gt;</span>
+                                <span class="code-html">&lt;p&gt;</span>Half-Left Modal<span class="code-html">&lt;/p&gt;</span>
+                            <span class="code-html">&lt;/div&gt;</span>
+            
+                            <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"modal-body-cont"</span><span class="code-html">&gt;</span>
+                            <span class="code-html">&lt;/asp:Panel&gt;</span>
+
+                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-footer-cont"</span><span class="code-html">&gt;</span>
+                                <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"okay-m-btn"</span><span class="code-html">&gt;</span>Okay<span class="code-html">&lt;/button&gt;</span>
+                                <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"close-m-btn"</span><span class="code-html">&gt;</span>Close<span class="code-html">&lt;/button&gt;</span>
+                            <span class="code-html">&lt;/div&gt;</span>
+                        <span class="code-html">&lt;/div&gt;</span>
+                    <span class="code-html">&lt;/asp:Panel&gt;</span>
+                </code></pre>
             </div>
         </div>
 
@@ -218,17 +221,19 @@
                     <i class="bi bi-clipboard copyButton">Copy</i>
                 </div>
                 <pre><code class="codeBlock">
-              <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"slideLeft-btn-modal"</span><span class="code-html">&gt;</span>Sliding Modal (left)<span class="code-html">&lt;/button&gt;</span>
-              <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"blur-overlay"</span><span class="code-html">&gt;&lt;/div&gt;</span>
-              <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"slidemodal-left"</span><span class="code-html">&gt;</span>
-                  <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-title"</span><span class="code-html">&gt;</span>
-                      <span class="code-html">&lt;p&gt;</span>Sliding Modal<span class="code-html">&lt;/p&gt;</span>
-                  <span class="code-html">&lt;/div&gt;</span>
-                  <span class="code-html">&lt;span</span> <span class="code-attr">class</span>=<span class="code-value">"slide-close-btn"</span><span class="code-html">&gt;</span>&#38;times&#59;<span class="code-html">&lt;/span&gt;</span>
-                  <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-content"</span><span class="code-html">&gt;&lt;/div&gt;</span>
-              <span class="code-html">&lt;/div&gt;</span>
-          </code></pre>
+                    <span class="code-html">&lt;button</span> <span class="code-attr">type</span>=<span class="code-value">"button"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">class</span>=<span class="code-value">"slideLeft-btn-modal"</span><span class="code-html">&gt;</span>Sliding Modal<span class="code-html">&lt;/button&gt;</span>
 
+                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"blur-overlay"</span><span class="code-html">&gt;&lt;/div&gt;</span>
+    
+                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"slidemodal-left"</span><span class="code-html">&gt;</span>
+                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-title"</span><span class="code-html">&gt;</span>
+                            <span class="code-html">&lt;p&gt;</span>Sliding Modal<span class="code-html">&lt;/p&gt;</span>
+                            <span class="code-html">&lt;asp:Label</span> <span class="code-attr">CssClass</span>=<span class="code-value">"slide-close-btn"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>&#38;times&#59;<span class="code-html">&lt;/asp:Label&gt;</span>
+                        <span class="code-html">&lt;/div&gt;</span>
+
+                        <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"modal-content"</span><span class="code-html">&gt;&lt;/asp:Panel&gt;</span>
+                    <span class="code-html">&lt;/div&gt;</span>
+                </code></pre>
             </div>
         </div>
 
@@ -258,28 +263,41 @@
                 <div class="copy-btn-cont">
                     <i class="bi bi-clipboard copyButton">Copy</i>
                 </div>
-                <pre><code class="codeBlock">
-              <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"halfRight-btn-modal"</span><span class="code-html">&gt;</span>Half-Right Modal<span class="code-html">&lt;/button&gt;</span>
-                  <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-overlay half-right-modal"</span><span class="code-html">&gt;</span>
-                   <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-cont-half-right"</span><span class="code-html">&gt;</span>
-                       <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-header-cont"</span><span class="code-html">&gt;</span>
-                          <span class="code-html">&lt;span</span> <span class="code-attr">class</span>=<span class="code-value">"close-btn-large"</span><span class="code-html">&gt;</span>&#38;times&#59;<span class="code-html">&lt;/span&gt;</span>
-                              <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-cont-title"</span><span class="code-html">&gt;</span>
-                                 <span class="code-html">&lt;h2</span> <span class="code-attr">class</span>=<span class="code-value">"modal-title-txt"</span><span class="code-html">&gt;</span>Small Modal<span class="code-html">&lt;/h2&gt;</span>
-                              <span class="code-html">&lt;/div&gt;</span>
-                          <span class="code-html">&lt;/div&gt;</span>
-                          <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-body-cont"</span><span class="code-html">&gt;</span>
-                          <span class="code-html">&lt;p</span> <span class="code-html">&gt;</span>
-                              Lorem Ipsum.
-                          <span class="code-html">&lt;/p&gt;</span>
-                          <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-footer-cont"</span><span class="code-html">&gt;</span>
-                                 <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"btn"</span><span class="code-html">&gt;</span>Small Modal<span class="code-html">&lt;/h2&gt;</span>
-                              <span class="code-html">&lt;/div&gt;</span>
-                       <span class="code-html">&lt;/div&gt;</span>
-                  <span class="code-html">&lt;/div&gt;</span>
-                <span class="code-html">&lt;/div&gt;</span>
+              <pre><code class="codeBlock">
+                    <span class="code-html">&lt;button</span> <span class="code-attr">type</span>=<span class="code-value">"button"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">class</span>=<span class="code-value">"halfRight-btn-modal"</span><span class="code-html">&gt;</span>Open Half-Right Modal<span class="code-html">&lt;/button&gt;</span>
+    
+                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-overlay half-right-modal"</span><span class="code-html">&gt;</span>
+                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-cont-half-right"</span><span class="code-html">&gt;</span>
+                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-header-title"</span><span class="code-html">&gt;</span>
+                                <span class="code-html">&lt;asp:Label</span> <span class="code-attr">CssClass</span>=<span class="code-value">"close-btn-right"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>&#38;times&#59;<span class="code-html">&lt;/asp:Label&gt;</span>
+                                <span class="code-html">&lt;p&gt;</span>Half-Right Modal<span class="code-html">&lt;/p&gt;</span>
+                            <span class="code-html">&lt;/div&gt;</span>
+                            <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"modal-body-cont"</span><span class="code-html">&gt;&lt;/asp:Panel&gt;</span>
+                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-footer-cont"</span><span class="code-html">&gt;</span>
+                                <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"okay-m-btn"</span><span class="code-html">&gt;</span>Okay<span class="code-html">&lt;/button&gt;</span>
+                                <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"close-m-btn"</span><span class="code-html">&gt;</span>Close<span class="code-html">&lt;/button&gt;</span>
+                            <span class="code-html">&lt;/div&gt;</span>
+                        <span class="code-html">&lt;/div&gt;</span>
+                    <span class="code-html">&lt;/div&gt;</span>
 
-          </code></pre>
+                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                        <span class="code-html">&lt;button</span> <span class="code-attr">type</span>=<span class="code-value">"button"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">class</span>=<span class="code-value">"modal-btn"</span><span class="code-html">&gt;</span>Modal<span class="code-html">&lt;/button&gt;</span>
+                    <span class="code-html">&lt;/div&gt;</span>
+
+                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal"</span><span class="code-html">&gt;</span>
+                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-cont"</span><span class="code-html">&gt;</span>
+                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-header-title"</span><span class="code-html">&gt;</span>
+                                <span class="code-html">&lt;asp:Label</span> <span class="code-attr">CssClass</span>=<span class="code-value">"close"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>&#38;times&#59;<span class="code-html">&lt;/asp:Label&gt;</span>
+                                <span class="code-html">&lt;p&gt;</span>Half-Right Modal<span class="code-html">&lt;/p&gt;</span>
+                            <span class="code-html">&lt;/div&gt;</span>
+                            <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"modal-body-cont"</span><span class="code-html">&gt;&lt;/asp:Panel&gt;</span>
+                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-footer-cont"</span><span class="code-html">&gt;</span>
+                                <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"okay-m-btn"</span><span class="code-html">&gt;</span>Okay<span class="code-html">&lt;/button&gt;</span>
+                                <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"close-m-btn"</span><span class="code-html">&gt;</span>Close<span class="code-html">&lt;/button&gt;</span>
+                            <span class="code-html">&lt;/div&gt;</span>
+                        <span class="code-html">&lt;/div&gt;</span>
+                    <span class="code-html">&lt;/div&gt;</span>
+                </code></pre>
             </div>
         </div>
 
@@ -290,10 +308,10 @@
                     <button type="button" runat="server" class="modal-btn">Modal</button>
                 </div>
                 <div class="modal">
-                    <div class="modal-cont">
+                    <asp:Panel class="modal-cont" runat="server">
                         <div class="modal-header-title">
                             <asp:Label CssClass="close" runat="server">&times;</asp:Label>
-                            <p>Half-Right Modal</p>
+                            <p> Modal</p>
                         </div>
                         <asp:Panel runat="server" CssClass="modal-body-cont">
                         </asp:Panel>
@@ -301,7 +319,7 @@
                             <button class="okay-m-btn">Okay</button>
                             <button class="close-m-btn">Close</button>
                         </div>
-                    </div>
+                    </asp:Panel>
                 </div>
             </div>
         </div>
@@ -311,18 +329,28 @@
                     <i class="bi bi-clipboard copyButton">Copy</i>
                 </div>
                 <pre><code class="codeBlock">
-              <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                  <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"modal-btn"</span><span class="code-html">&gt;</span>Modal<span class="code-html">&lt;/button&gt;</span>
-              <span class="code-html">&lt;/div&gt;</span>
-              <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal"</span><span class="code-html">&gt;</span>
-                  <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-cont"</span><span class="code-html">&gt;</span>
-                      <span class="code-html">&lt;span</span> <span class="code-attr">class</span>=<span class="code-value">"close"</span><span class="code-html">&gt;</span>&#38;times&#59;<span class="code-html">&lt;/span&gt;</span>
-                      <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-title"</span><span class="code-html">&gt;</span>
-                          <span class="code-html">&lt;p&gt;</span>This is modal<span class="code-html">&lt;/p&gt;</span>
-                      <span class="code-html">&lt;/div&gt;</span>
-                  <span class="code-html">&lt;/div&gt;</span>
-              <span class="code-html">&lt;/div&gt;</span>
-          </code></pre>
+                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                    <span class="code-html">&lt;button</span> <span class="code-attr">type</span>=<span class="code-value">"button"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">class</span>=<span class="code-value">"modal-btn"</span><span class="code-html">&gt;</span>Modal<span class="code-html">&lt;/button&gt;</span>
+                <span class="code-html">&lt;/div&gt;</span>
+
+                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal"</span><span class="code-html">&gt;</span>
+                    <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"modal-cont"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-header-title"</span><span class="code-html">&gt;</span>
+                            <span class="code-html">&lt;asp:Label</span> <span class="code-attr">CssClass</span>=<span class="code-value">"close"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>&amp;times;<span class="code-html">&lt;/asp:Label&gt;</span>
+                            <span class="code-html">&lt;p&gt;</span> Modal<span class="code-html">&lt;/p&gt;</span>
+                        <span class="code-html">&lt;/div&gt;</span>
+
+                        <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"modal-body-cont"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                        <span class="code-html">&lt;/asp:Panel&gt;</span>
+
+                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"modal-footer-cont"</span><span class="code-html">&gt;</span>
+                            <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"okay-m-btn"</span><span class="code-html">&gt;</span>Okay<span class="code-html">&lt;/button&gt;</span>
+                            <span class="code-html">&lt;button</span> <span class="code-attr">class</span>=<span class="code-value">"close-m-btn"</span><span class="code-html">&gt;</span>Close<span class="code-html">&lt;/button&gt;</span>
+                        <span class="code-html">&lt;/div&gt;</span>
+                    <span class="code-html">&lt;/asp:Panel&gt;</span>
+                <span class="code-html">&lt;/div&gt;</span>
+            </code></pre>
+
 
             </div>
         </div>

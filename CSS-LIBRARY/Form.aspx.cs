@@ -30,6 +30,11 @@ namespace CSS_LIBRARY
         {
             public string state_name { get; set; }
         }
+        public class User
+        {
+            public string UserID { get; set; }
+            public string UserName { get; set; }
+        }
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -68,76 +73,71 @@ namespace CSS_LIBRARY
         }
         private void LoadStates()
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
-            string query = "SELECT state_name FROM states"; // Make sure this table and column exist
+            DataTable dt = new DataTable();
+            dt.Columns.Add("state_name", typeof(string));
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            // Add sample state data
+            dt.Rows.Add("California");
+            dt.Rows.Add("Texas");
+            dt.Rows.Add("New York");
+            dt.Rows.Add("Florida");
+            dt.Rows.Add("Illinois");
+
+            var stateList = new List<State>();
+            foreach (DataRow row in dt.Rows)
             {
-                SqlCommand cmd = new SqlCommand(query, conn);
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                var stateList = new List<State>();
-                while (reader.Read())
-                {
-                    stateList.Add(new State { state_name = reader["state_name"].ToString() });
-                }
-
-                reader.Close();
-
-                Repeater1.DataSource = stateList;
-                Repeater1.DataBind();
+                stateList.Add(new State { state_name = row["state_name"].ToString() });
             }
+
+            Repeater1.DataSource = stateList;
+            Repeater1.DataBind();
         }
 
         private void LoadCities()
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
-            string query = "SELECT city_name FROM cities"; // This should be your city table
+            DataTable dt = new DataTable();
+            dt.Columns.Add("city_name", typeof(string));
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            // Add sample city data
+            dt.Rows.Add("Los Angeles");
+            dt.Rows.Add("Houston");
+            dt.Rows.Add("Chicago");
+            dt.Rows.Add("Miami");
+            dt.Rows.Add("Dallas");
+
+            var cityList = new List<City>();
+            foreach (DataRow row in dt.Rows)
             {
-                SqlCommand cmd = new SqlCommand(query, conn);
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                var cityList = new List<City>();
-                while (reader.Read())
-                {
-                    cityList.Add(new City { city_name = reader["city_name"].ToString() });
-                }
-
-                reader.Close();
-
-                RepeaterCities.DataSource = cityList;
-                RepeaterCities.DataBind();
+                cityList.Add(new City { city_name = row["city_name"].ToString() });
             }
+
+            RepeaterCities.DataSource = cityList;
+            RepeaterCities.DataBind();
         }
+
+        
 
         private void LoadCountries()
         {
-            string connectionString = ConfigurationManager.ConnectionStrings["MyDbConnection"].ConnectionString;
-            string query = "SELECT country_name FROM countries"; // Ensure this table exists
+            DataTable dt = new DataTable();
+            dt.Columns.Add("country_name", typeof(string));
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            // Add sample country data
+            dt.Rows.Add("United States");
+            dt.Rows.Add("Canada");
+            dt.Rows.Add("Mexico");
+            dt.Rows.Add("Brazil");
+            dt.Rows.Add("United Kingdom");
+
+            var countryList = new List<Country>();
+            foreach (DataRow row in dt.Rows)
             {
-                SqlCommand cmd = new SqlCommand(query, conn);
-                conn.Open();
-                SqlDataReader reader = cmd.ExecuteReader();
-
-                var countryList = new List<Country>();
-                while (reader.Read())
-                {
-                    countryList.Add(new Country { country_name = reader["country_name"].ToString() });
-                }
-
-                reader.Close();
-
-                Repeater2.DataSource = countryList;
-                Repeater2.DataBind();
+                countryList.Add(new Country { country_name = row["country_name"].ToString() });
             }
-        }
 
+            Repeater2.DataSource = countryList;
+            Repeater2.DataBind();
+        }
 
     }
 }

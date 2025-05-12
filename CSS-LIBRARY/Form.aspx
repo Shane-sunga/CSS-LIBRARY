@@ -347,13 +347,14 @@
 
                             <asp:Panel CssClass="form-cont" runat="server">
                                 <div class="input-cont">
-                                    <label class="input-label">Dropdown</label>
+                                    <label class="input-label">Dropdown List</label>
                                     <asp:DropDownList ID="ddlCities" runat="server" CssClass="dropdown-select">
                                     </asp:DropDownList>
                                 </div>
+
                                 <div class="input-cont">
-                                    <label class="input-label">Dropdown</label>
-                                    <asp:Panel CssClass="dropdown" runat="server">
+                                    <label class="input-label">Dropdown with Search</label>
+                                    <div class="dropdown" runat="server">
                                         <asp:Panel CssClass="dropdown-select" required runat="server">
                                             <p>Select Option</p>
                                             <i class="bi bi-chevron-down"></i>
@@ -371,12 +372,12 @@
                                                 </asp:Repeater>
                                             </asp:Panel>
                                         </asp:Panel>
-                                    </asp:Panel>
+                                    </div>
                                 </div>
 
                                 <div class="input-cont">
-                                    <label class="input-label">Dropdown</label>
-                                    <asp:Panel CssClass="dropdown" runat="server">
+                                    <label class="input-label">Dropdown Primary with seach</label>
+                                    <div class="dropdown" runat="server">
                                         <asp:Panel CssClass="dropdown-select dropdown-border-primary" required runat="server">
                                             <p>Select Option</p>
                                             <i class="bi bi-chevron-down"></i>
@@ -395,11 +396,11 @@
                                                 <div class="dropdown-item">Option 6</div>
                                             </asp:Panel>
                                         </asp:Panel>
-                                    </asp:Panel>
+                                    </div>
                                 </div>
 
-                                <asp:Panel CssClass="input-cont-drop" runat="server">
-                                    <label class="input-label">Dropdown</label>
+                                <div class="input-cont-drop" runat="server">
+                                    <label class="input-label">Dropdown With other</label>
                                     <asp:Panel CssClass="form-dropdown-other" required runat="server">Select an option</asp:Panel>
                                     <asp:Panel CssClass="dropdown-options-other" runat="server">
 
@@ -413,7 +414,7 @@
                                      <asp:TextBox TextMode="SingleLine" CssClass="form-dropdown-input" runat="server" placeholder="Enter option"></asp:TextBox>
                                         </asp:Panel>
                                     </asp:Panel>
-                                </asp:Panel>
+                                </div>
                             </asp:Panel>
                             <asp:Panel CssClass="form-cont" runat="server">
                                 <div class="input-cont">
