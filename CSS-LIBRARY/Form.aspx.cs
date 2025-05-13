@@ -14,6 +14,8 @@ namespace CSS_LIBRARY
     public partial class Form : System.Web.UI.Page
 
     {
+        
+
 
         public class Country
         {
@@ -38,12 +40,18 @@ namespace CSS_LIBRARY
 
         protected void Page_Load(object sender, EventArgs e)
         {
+           
             if (!IsPostBack)
             {
                 LoadStates();
                 LoadCities();
                 LoadCountries();
                 BindCityDropdown();
+                ddlCountries.Items.Add(new ListItem("United States", "US"));
+                ddlCountries.Items.Add(new ListItem("Canada", "CA"));
+                ddlCountries.Items.Add(new ListItem("United Kingdom", "UK"));
+                ddlCountries.Items.Add(new ListItem("India", "IN"));
+                ddlCountries.Items.Insert(0, new ListItem("-- Select Country --", ""));
             }
         }
 

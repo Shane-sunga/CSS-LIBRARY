@@ -50,8 +50,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 currentForm.find('[required]').each(function () {
                     const $field = $(this);
 
-
-
                     // === ZIP CODE VALIDATION ===
                     if ($field.hasClass('zip-input')) {
                         const inputGroup = $field.closest('.input-group');
@@ -119,9 +117,22 @@ document.addEventListener("DOMContentLoaded", function () {
                             itiContainer.css('border', '');
                         }
                     }
+
+                    // === Select2 Validation ===
+                    if ($field.hasClass('searchable-dropdown')) {
+                        const value = $field.val();
+                        const select2Selection = $field.next('.select2-container').find('.select2-selection--single');
+                        if (!value) {
+                            select2Selection.attr('style', 'border: 2px solid red !important; ');
+                            isValid = false;
+                        } else {
+                            select2Selection.css('border', '');
+                        }
+                    }
                 });
             });
         });
+
 
         // === RADIO BUTTON GROUP VALIDATION ===
         $(document).on('change', 'input[type="radio"]', function () {

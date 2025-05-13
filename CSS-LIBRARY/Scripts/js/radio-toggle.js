@@ -13,6 +13,34 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
     });
+    $(document).ready(function () {
+        $('.searchable-dropdown').select2({
+            placeholder: "Select a country",
+            allowClear: true,
+            dropdownCssClass: "custom-selection",   // optional
+            containerCssClass: "custom-selection"   // optional
+        });
+    });
 
+});
 
-  });
+window.addEventListener("DOMContentLoaded", function () {
+    let dropdown = document.querySelector(".dropdown-select-other");
+    let otherInputContainer = document.querySelector(".dropdown-other-cont");
+
+    if (!dropdown || !otherInputContainer) return; // safety
+
+    function toggleOtherInput() {
+        if (dropdown.value === "Other") {
+            otherInputContainer.style.display = "flex";
+        } else {
+            otherInputContainer.style.display = "none";
+        }
+    }
+
+    // Initial state check
+    toggleOtherInput();
+
+    // On change event
+    dropdown.addEventListener("change", toggleOtherInput);
+});

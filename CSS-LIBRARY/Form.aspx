@@ -57,42 +57,51 @@
                             <i class="bi bi-clipboard copyButton">Copy</i>
                         </div>
                         <pre><code class="codeBlock">
-                    <span class="code-html">&lt;form</span> <span class="code-attr">class</span>=<span class="code-value">"form"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"form-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Text (Alphabet)<span class="code-html">&lt;/label&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"text"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-text"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;/div&gt;</span>
+                            <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+    
+                                <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Text (Alphabet)<span class="code-html">&lt;/label&gt;</span>
+                                        <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">TextMode</span>=<span class="code-value">"SingleLine"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-tb-text"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span><span class="code-html"> /&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
+            
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Text<span class="code-html">&lt;/label&gt;</span>
+                                        <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">TextMode</span>=<span class="code-value">"SingleLine"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-tb-text-shuffle"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html"> /&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
+            
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Text (Special Character)<span class="code-html">&lt;/label&gt;</span>
+                                        <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">TextMode</span>=<span class="code-value">"SingleLine"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-tb-text-char"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">required</span><span class="code-html"> /&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
+                                <span class="code-html">&lt;/asp:Panel&gt;</span>
 
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Text <span class="code-html">&lt;/label&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"text"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-text-shuffle"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;/div&gt;</span>
+                                <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Text (Uppercase)<span class="code-html">&lt;/label&gt;</span>
+                                        <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">TextMode</span>=<span class="code-value">"SingleLine"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-tb-text-uppercase"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html"> /&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
 
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Text (Special Character)<span class="code-html">&lt;/label&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"text"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-text-char"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;/div&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Text (Capitalize)<span class="code-html">&lt;/label&gt;</span>
+                                        <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">TextMode</span>=<span class="code-value">"SingleLine"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-tb-text-Capitalize"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html"> /&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
 
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"form-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Text (Uppercase)<span class="code-html">&lt;/label&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"text"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-text-uppercase"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;/div&gt;</span>
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Text (Lowercase)<span class="code-html">&lt;/label&gt;</span>
+                                        <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">TextMode</span>=<span class="code-value">"SingleLine"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-tb-text-lowerC"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html"> /&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
+                                <span class="code-html">&lt;/asp:Panel&gt;</span>
 
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Text (Capitalize)<span class="code-html">&lt;/label&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"text"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-text-Capitalize"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;/div&gt;</span>
+                                <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;asp:Button</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-btn-submit"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"Submit"</span><span class="code-html"> /&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
+                                <span class="code-html">&lt;/asp:Panel&gt;</span>
 
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Text (Lowercase)<span class="code-html">&lt;/label&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"text"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-text-lowerC"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;/div&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
-                    <span class="code-html">&lt;/form&gt;</span>
-            </code></pre>
+                            <span class="code-html">&lt;/asp:Panel&gt;</span>
+                        </code></pre>
+
                     </div>
                 </div>
 
@@ -126,20 +135,29 @@
                             <i class="bi bi-clipboard copyButton">Copy</i>
                         </div>
                         <pre><code class="codeBlock">
-                    <span class="code-html">&lt;form</span> <span class="code-attr">class</span>=<span class="code-value">"form"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"form-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Text (For Middle name)<span class="code-html">&lt;/label&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"text"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-middleName"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;/div&gt;</span>
+                        <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                            <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
 
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Text Initial<span class="code-html">&lt;/label&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"text"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-middleInitial"</span> <span class="code-attr">readonly</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;/div&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
-                    <span class="code-html">&lt;/form&gt;</span>
-            </code></pre>
+                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Text (For Middle Name)<span class="code-html">&lt;/label&gt;</span>
+                                    <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">TextMode</span>=<span class="code-value">"SingleLine"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-tb-middleName"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">/&gt;</span>
+                                <span class="code-html">&lt;/div&gt;</span>
+
+                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Text (Initial)<span class="code-html">&lt;/label&gt;</span>
+                                    <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">TextMode</span>=<span class="code-value">"SingleLine"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-tb-middleInitial"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">ReadOnly</span>=<span class="code-value">"true"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">/&gt;</span>
+                                <span class="code-html">&lt;/div&gt;</span>
+
+                            <span class="code-html">&lt;/asp:Panel&gt;</span>
+
+                            <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;asp:Button</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-btn-submit"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"Submit"</span><span class="code-html">/&gt;</span>
+                                <span class="code-html">&lt;/div&gt;</span>
+                            <span class="code-html">&lt;/asp:Panel&gt;</span>
+                        <span class="code-html">&lt;/asp:Panel&gt;</span>
+                    </code></pre>
+
                     </div>
                 </div>
 
@@ -202,48 +220,57 @@
                             <i class="bi bi-clipboard copyButton">Copy</i>
                         </div>
                         <pre><code class="codeBlock">
-                    <span class="code-html">&lt;form</span> <span class="code-attr">class</span>=<span class="code-value">"form"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"form-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Number<span class="code-html">&lt;/label&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"text"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-number"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;/div&gt;</span>
+                            <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
 
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"form-container"</span><span class="code-html">&gt;</span>
-                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-label-error"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Zip Code<span class="code-html">&lt;/label&gt;</span>
-                                <span class="code-html">&lt;p</span> <span class="code-attr">class</span>=<span class="code-value">"zipMessage"</span><span class="code-html">&gt;&lt;/p&gt;</span>
-                            <span class="code-html">&lt;/div&gt;</span>
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-group"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;img</span> <span class="code-attr">class</span>=<span class="code-value">"flag-icon"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"number"</span> <span class="code-attr">class</span>=<span class="code-value">"zip-input"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Enter ZIP Code"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;/div&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
-                    <span class="code-html">&lt;/div&gt;</span>
-                <span class="code-html">&lt;/div&gt;</span>
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Number<span class="code-html">&lt;/label&gt;</span>
+                                        <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">TextMode</span>=<span class="code-value">"Number"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-tb-number"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">/&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
 
-                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"form-cont"</span><span class="code-html">&gt;</span>
-                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Contact Number<span class="code-html">&lt;/label&gt;</span>
-                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"number"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-contNumber"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                    <span class="code-html">&lt;/div&gt;</span>
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-container"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-label-error"</span><span class="code-html">&gt;</span>
+                                                <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Zip Code<span class="code-html">&lt;/label&gt;</span>
+                                                <span class="code-html">&lt;asp:Label</span> <span class="code-attr">CssClass</span>=<span class="code-value">"zipMessage"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">/&gt;</span>
+                                            <span class="code-html">&lt;/div&gt;</span>
+                                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-group"</span><span class="code-html">&gt;</span>
+                                                <span class="code-html">&lt;asp:Image</span> <span class="code-attr">CssClass</span>=<span class="code-value">"flag-icon"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">/&gt;</span>
+                                                <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">TextMode</span>=<span class="code-value">"Number"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"zip-input"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Enter ZIP Code"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">/&gt;</span>
+                                            <span class="code-html">&lt;/div&gt;</span>
+                                        <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
 
-                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-label-error"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Phone Number<span class="code-html">&lt;/label&gt;</span>
-                        <span class="code-html">&lt;p</span> <span class="code-attr">class</span>=<span class="code-value">"error"</span><span class="code-html">&gt;</span>Invalid phone number!<span class="code-html">&lt;/p&gt;</span>
-                    <span class="code-html">&lt;/div&gt;</span>
-                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"number"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-tel"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                    <span class="code-html">&lt;/div&gt;</span>
+                                <span class="code-html">&lt;/asp:Panel&gt;</span>
 
-                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Number with Two decimal<span class="code-html">&lt;/label&gt;</span>
-                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"number"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-deci"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                    <span class="code-html">&lt;/div&gt;</span>
-                 <span class="code-html">&lt;/div&gt;</span>
-            <span class="code-html">&lt;/form&gt;</span>
-            </code></pre>
+                                <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Contact Number<span class="code-html">&lt;/label&gt;</span>
+                                        <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">TextMode</span>=<span class="code-value">"Number"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-tb-contNumber"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">/&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
+
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-label-error"</span><span class="code-html">&gt;</span>
+                                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Phone Number<span class="code-html">&lt;/label&gt;</span>
+                                            <span class="code-html">&lt;asp:Label</span> <span class="code-attr">CssClass</span>=<span class="code-value">"error"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"Invalid phone number!"</span><span class="code-html">/&gt;</span>
+                                        <span class="code-html">&lt;/div&gt;</span>
+                                        <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">TextMode</span>=<span class="code-value">"Phone"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-tb-tel"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">/&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
+
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Number with Two decimal<span class="code-html">&lt;/label&gt;</span>
+                                        <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">TextMode</span>=<span class="code-value">"Number"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-tb-deci"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">step</span>=<span class="code-value">"0.01"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">/&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
+                                <span class="code-html">&lt;/asp:Panel&gt;</span>
+
+                                <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;asp:Button</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-btn-submit"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"Submit"</span><span class="code-html">/&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
+                                <span class="code-html">&lt;/asp:Panel&gt;</span>
+                            <span class="code-html">&lt;/asp:Panel&gt;</span>
+                        </code></pre>
+
                     </div>
                 </div>
 
@@ -300,43 +327,48 @@
                             <i class="bi bi-clipboard copyButton">Copy</i>
                         </div>
                         <pre><code class="codeBlock">
-                    <span class="code-html">&lt;form</span> <span class="code-attr">class</span>=<span class="code-value">"form"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"form-cont"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Drop-down<span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-select"</span><span class="code-html">&gt;</span>
-                                    <span class="code-html">&lt;p&gt;</span>Select Option<span class="code-html">&lt;/p&gt;</span>
-                                    <span class="code-html">&lt;i</span> <span class="code-attr">class</span>=<span class="code-value">"bi bi-chevron-down"</span><span class="code-html">&gt;&lt;/i&gt;</span>
-                                <span class="code-html">&lt;/div&gt;</span>
-                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-content"</span><span class="code-html">&gt;</span>
-                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-options"</span><span class="code-html">&gt;</span>
-                                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-item"</span><span class="code-html">&gt;</span>Option 1<span class="code-html">&lt;/div&gt;</span>
-                                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-item"</span><span class="code-html">&gt;</span>Option 2<span class="code-html">&lt;/div&gt;</span>
-                                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-item"</span><span class="code-html">&gt;</span>Option 3<span class="code-html">&lt;/div&gt;</span>
+                            <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Drop-down<span class="code-html">&lt;/label&gt;</span>
+                                        <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"dropdown"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                            <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"dropdown-select"</span> <span class="code-attr">data-value</span>=<span class="code-value">""</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
+                                                <span class="code-html">&lt;p&gt;Select Option&lt;/p&gt;</span>
+                                                <span class="code-html">&lt;i</span> <span class="code-attr">class</span>=<span class="code-value">"bi bi-chevron-down"</span> <span class="code-html">&gt;&lt;/i&gt;</span>
+                                            <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                            <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"dropdown-content"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                                <span class="code-html">&lt;asp:Repeater</span> <span class="code-attr">ID</span>=<span class="code-value">"RepeaterCities"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                                    <span class="code-html">&lt;ItemTemplate&gt;</span>
+                                                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-item"</span><span class="code-html">&gt;</span><span class="code-value">&lt;%&#35; Eval("city_name") %&gt;</span><span class="code-html">&lt;/div&gt;</span>
+                                                    <span class="code-html">&lt;/ItemTemplate&gt;</span>
+                                                <span class="code-html">&lt;/asp:Repeater&gt;</span>
+                                            <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                        <span class="code-html">&lt;/asp:Panel&gt;</span>
                                     <span class="code-html">&lt;/div&gt;</span>
-                                <span class="code-html">&lt;/div&gt;</span>
-                            <span class="code-html">&lt;/div&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Separate Date<span class="code-html">&lt;/label&gt;</span>
+                                        <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"sepdate-cont"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                            <span class="code-html">&lt;asp:DropDownList</span> <span class="code-attr">CssClass</span>=<span class="code-value">"input-day"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                                <span class="code-html">&lt;asp:ListItem</span> <span class="code-attr">Text</span>=<span class="code-value">"DD"</span> <span class="code-attr">Value</span>=<span class="code-value">""</span><span class="code-html">&gt;&lt;/asp:ListItem&gt;</span>
+                                            <span class="code-html">&lt;/asp:DropDownList&gt;</span>
+                                            <span class="code-html">&lt;asp:DropDownList</span> <span class="code-attr">CssClass</span>=<span class="code-value">"input-month"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                                <span class="code-html">&lt;asp:ListItem</span> <span class="code-attr">Text</span>=<span class="code-value">"MM"</span> <span class="code-attr">Value</span>=<span class="code-value">""</span><span class="code-html">&gt;&lt;/asp:ListItem&gt;</span>
+                                            <span class="code-html">&lt;/asp:DropDownList&gt;</span>
+                                            <span class="code-html">&lt;asp:DropDownList</span> <span class="code-attr">CssClass</span>=<span class="code-value">"input-year"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                                <span class="code-html">&lt;asp:ListItem</span> <span class="code-attr">Text</span>=<span class="code-value">"YYYY"</span> <span class="code-attr">Value</span>=<span class="code-value">""</span><span class="code-html">&gt;&lt;/asp:ListItem&gt;</span>
+                                            <span class="code-html">&lt;/asp:DropDownList&gt;</span>
+                                        <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"hidden"</span> <span class="code-attr">class</span>=<span class="code-value">"input-full-date"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">/&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
+                                <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;asp:Button</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-btn-submit"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"Submit"</span><span class="code-html">/&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
+                                <span class="code-html">&lt;/asp:Panel&gt;</span>
+                            <span class="code-html">&lt;/asp:Panel&gt;</span>
+                        </code></pre>
 
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Separate Date<span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"sepdate-cont"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;select</span> <span class="code-attr">class</span>=<span class="code-value">"input-day"</span><span class="code-html">&gt;</span>
-                                    <span class="code-html">&lt;option</span> <span class="code-attr">value</span>=<span class="code-value">""</span><span class="code-html">&gt;</span>DD<span class="code-html">&lt;/option&gt;</span>
-                                <span class="code-html">&lt;/select&gt;</span>
-                                <span class="code-html">&lt;select</span> <span class="code-attr">class</span>=<span class="code-value">"input-month"</span><span class="code-html">&gt;</span>
-                                    <span class="code-html">&lt;option</span> <span class="code-attr">value</span>=<span class="code-value">""</span><span class="code-html">&gt;</span>MM<span class="code-html">&lt;/option&gt;</span>
-                                <span class="code-html">&lt;/select&gt;</span>
-                                <span class="code-html">&lt;select</span> <span class="code-attr">class</span>=<span class="code-value">"input-year"</span><span class="code-html">&gt;</span>
-                                    <span class="code-html">&lt;option</span> <span class="code-attr">value</span>=<span class="code-value">""</span><span class="code-html">&gt;</span>YYYY<span class="code-html">&lt;/option&gt;</span>
-                                <span class="code-html">&lt;/select&gt;</span>
-                            <span class="code-html">&lt;/div&gt;</span>
-                            <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"hidden"</span> <span class="code-attr">class</span>=<span class="code-value">"input-full-date"</span> <span class="code-attr">name</span>=<span class="code-value">"full_date"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
-                    <span class="code-html">&lt;/div&gt;</span>
-                <span class="code-html">&lt;/form&gt;</span>
-            </code></pre>
                     </div>
                 </div>
 
@@ -348,7 +380,7 @@
                             <asp:Panel CssClass="form-cont" runat="server">
                                 <div class="input-cont">
                                     <label class="input-label">Dropdown List</label>
-                                    <asp:DropDownList ID="ddlCities" runat="server" CssClass="dropdown-select">
+                                    <asp:DropDownList ID="ddlCities" runat="server" CssClass="dropdown-select" required>
                                     </asp:DropDownList>
                                 </div>
 
@@ -376,7 +408,7 @@
                                 </div>
 
                                 <div class="input-cont">
-                                    <label class="input-label">Dropdown Primary with seach</label>
+                                    <label class="input-label">Dropdown Primary</label>
                                     <div class="dropdown" runat="server">
                                         <asp:Panel CssClass="dropdown-select dropdown-border-primary" required runat="server">
                                             <p>Select Option</p>
@@ -398,7 +430,8 @@
                                         </asp:Panel>
                                     </div>
                                 </div>
-
+                            </asp:Panel>
+                            <asp:Panel CssClass="form-cont" runat="server">
                                 <div class="input-cont-drop" runat="server">
                                     <label class="input-label">Dropdown With other</label>
                                     <asp:Panel CssClass="form-dropdown-other" required runat="server">Select an option</asp:Panel>
@@ -415,6 +448,26 @@
                                         </asp:Panel>
                                     </asp:Panel>
                                 </div>
+                                <div class="input-cont">
+                                    <label class="input-label">ASP Dropdown With search</label>
+                                    <asp:DropDownList ID="ddlCountries" runat="server" CssClass="searchable-dropdown" required>
+                                    </asp:DropDownList>
+                                </div>
+                                <div class="input-cont">
+                                    <label class="input-label">ASP Dropdown With Other</label>
+                                    <asp:DropDownList runat="server" CssClass="dropdown-select-other" required>
+                                        <asp:ListItem Text="--Select Value--" Value="" />
+                                        <asp:ListItem Text="Option 1" Value="Option 1" />
+                                        <asp:ListItem Text="Option 2" Value="Option 2" />
+                                        <asp:ListItem Text="Option 3" Value="Option 3" />
+                                        <asp:ListItem Text="Other" Value="Other" />
+                                    </asp:DropDownList>
+
+                                </div>
+                                <div class="dropdown-other-cont">
+                                    <label class="input-label">Text</label>
+                                    <asp:TextBox TextMode="SingleLine" CssClass="dropdown-tb-other" placeholder="Sample placeholder" runat="server"></asp:TextBox>
+                                </div>
                             </asp:Panel>
                             <asp:Panel CssClass="form-cont" runat="server">
                                 <div class="input-cont">
@@ -425,58 +478,99 @@
                     </div>
                 </div>
 
+
                 <div class="container">
                     <div class="code-style">
                         <div class="copy-btn-cont">
                             <i class="bi bi-clipboard copyButton">Copy</i>
                         </div>
                         <pre><code class="codeBlock">
-                    <span class="code-html">&lt;form</span> <span class="code-attr">action</span>=<span class="code-value">""</span> <span class="code-attr">class</span>=<span class="code-value">"form"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"form-cont"</span><span class="code-html">&gt;</span>
-
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-select"</span><span class="code-html">&gt;</span>
-                                    <span class="code-html">&lt;p&gt;</span>Select Option<span class="code-html">&lt;/p&gt;</span>
-                                    <span class="code-html">&lt;i</span> <span class="code-attr">class</span>=<span class="code-value">"bi bi-chevron-down"</span><span class="code-html">&gt;&lt;/i&gt;</span>
+                           <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                            <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Dropdown List<span class="code-html">&lt;/label&gt;</span>
+                                    <span class="code-html">&lt;asp:DropDownList</span> <span class="code-attr">ID</span>=<span class="code-value">"ddlCities"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"dropdown-select"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;/asp:DropDownList&gt;</span>
                                 <span class="code-html">&lt;/div&gt;</span>
 
-                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-content"</span><span class="code-html">&gt;</span>
-                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-wrapper"</span><span class="code-html">&gt;</span>
-                                        <span class="code-html">&lt;i</span> <span class="code-attr">class</span>=<span class="code-value">"bi bi-search"</span><span class="code-html">&gt;&lt;/i&gt;</span>
-                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"search"</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-search form-tb-search"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Search..."</span><span class="code-html">&gt;</span>
-                                    <span class="code-html">&lt;/div&gt;</span>
+                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Dropdown with Search<span class="code-html">&lt;/label&gt;</span>
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"dropdown-select"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                            <span class="code-html">&lt;p&gt;Select Option&lt;/p&gt;</span>
+                                            <span class="code-html">&lt;i</span> <span class="code-attr">class</span>=<span class="code-value">"bi bi-chevron-down"</span> <span class="code-html">&gt;&lt;/i&gt;</span>
+                                        <span class="code-html">&lt;/asp:Panel&gt;</span>
 
-                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-options"</span><span class="code-html">&gt;</span>
-                                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-item"</span><span class="code-html">&gt;</span>Option 1<span class="code-html">&lt;/div&gt;</span>
-                                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-item"</span><span class="code-html">&gt;</span>Option 2<span class="code-html">&lt;/div&gt;</span>
-                                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-item"</span><span class="code-html">&gt;</span>Option 3<span class="code-html">&lt;/div&gt;</span>
+                                        <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"dropdown-content"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                            <span class="code-html">&lt;div class="input-wrapper"&gt;</span>
+                                                <span class="code-html">&lt;i class="bi bi-search"&gt;&lt;/i&gt;</span>
+                                               <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"search"</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-search form-tb-search"</span> <span class="code-attr">data-value</span>=<span class="code-value">""</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Search..."</span><span class="code-html">&gt;</span>
+                                            <span class="code-html">&lt;/div&gt;</span>
+                                            <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"dropdown-options"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                                <span class="code-html">&lt;asp:Repeater</span> <span class="code-attr">ID</span>=<span class="code-value">"Repeater1"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span><span class="code-html">&gt;</span>
+                                                    <span class="code-html">&lt;ItemTemplate&gt;</span>
+                                                        <span class="code-html">&lt;div class="dropdown-item"&gt;</span><span class="code-value">&lt;%# Eval("state_name") %&gt;</span><span class="code-html">&lt;/div&gt;</span>
+                                                    <span class="code-html">&lt;/ItemTemplate&gt;</span>
+                                                <span class="code-html">&lt;/asp:Repeater&gt;</span>
+                                            <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                        <span class="code-html">&lt;/asp:Panel&gt;</span>
                                     <span class="code-html">&lt;/div&gt;</span>
+                                <span class="code-html">&lt;/div&gt;</span>
+                          <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span>&gt;
+                                <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span>&gt;Dropdown Primary with Search<span class="code-html">&lt;/label&gt;</span>
+                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+                                    <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"dropdown-select dropdown-border-primary"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+                                        <span class="code-html">&lt;p&gt;</span>Select Option<span class="code-html">&lt;/p&gt;</span>
+                                        <span class="code-html">&lt;i</span> <span class="code-attr">class</span>=<span class="code-value">"bi bi-chevron-down"</span><span class="code-html">&gt;&lt;/i&gt;</span>
+                                    <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                    <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"dropdown-content"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+                                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-wrapper"</span>&gt;
+                                            <span class="code-html">&lt;i</span> <span class="code-attr">class</span>=<span class="code-value">"bi bi-search"</span><span class="code-html">&gt;&lt;/i&gt;</span>
+                                            <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"search"</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-search form-tb-search"</span> <span class="code-attr">data-value</span>=<span class="code-value">""</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Search..."</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;/div&gt;</span>
+                                        <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"dropdown-options"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+                                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-item"</span>&gt;Option 1<span class="code-html">&lt;/div&gt;</span>
+                                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-item"</span>&gt;Option 2<span class="code-html">&lt;/div&gt;</span>
+                                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-item"</span>&gt;Option 3<span class="code-html">&lt;/div&gt;</span>
+                                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-item"</span>&gt;Option 4<span class="code-html">&lt;/div&gt;</span>
+                                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-item"</span>&gt;Shane 5<span class="code-html">&lt;/div&gt;</span>
+                                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-item"</span>&gt;Option 6<span class="code-html">&lt;/div&gt;</span>
+                                        <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                    <span class="code-html">&lt;/asp:Panel&gt;</span>
                                 <span class="code-html">&lt;/div&gt;</span>
                             <span class="code-html">&lt;/div&gt;</span>
 
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-border-primary"</span><span class="code-html">&gt;</span>
-                                    <span class="code-html">&lt;p&gt;</span>Select Option<span class="code-html">&lt;/p&gt;</span>
-                                    <span class="code-html">&lt;i</span> <span class="code-attr">class</span>=<span class="code-value">"bi bi-chevron-down"</span><span class="code-html">&gt;&lt;/i&gt;</span>
-                                <span class="code-html">&lt;/div&gt;</span>
-
-                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-content"</span><span class="code-html">&gt;</span>
-                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-wrapper"</span><span class="code-html">&gt;</span>
-                                        <span class="code-html">&lt;i</span> <span class="code-attr">class</span>=<span class="code-value">"bi bi-search"</span><span class="code-html">&gt;&lt;/i&gt;</span>
-                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"search"</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-search form-tb-search"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Search..."</span><span class="code-html">&gt;</span>
-                                    <span class="code-html">&lt;/div&gt;</span>
-
-                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-options"</span><span class="code-html">&gt;</span>
-                                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-item"</span><span class="code-html">&gt;</span>Option 1<span class="code-html">&lt;/div&gt;</span>
-                                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-item"</span><span class="code-html">&gt;</span>option 2<span class="code-html">&lt;/div&gt;</span>
-                                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-item"</span><span class="code-html">&gt;</span>OPTION 3<span class="code-html">&lt;/div&gt;</span>
-                                    <span class="code-html">&lt;/div&gt;</span>
-                                <span class="code-html">&lt;/div&gt;</span>
+                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont-drop"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+                                <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span>&gt;Dropdown With Other<span class="code-html">&lt;/label&gt;</span>
+                                <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-dropdown-other"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+                                    Select an option
+                                <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"dropdown-options-other"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+            
+                                    <span class="code-html">&lt;asp:Repeater</span> <span class="code-attr">ID</span>=<span class="code-value">"Repeater2"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+                                        <span class="code-html">&lt;ItemTemplate&gt;</span>
+                                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"dropdown-item-other"</span> <span class="code-attr">data-value</span>=<span class="code-value">'&lt;%# Eval("country_name") %&gt;'</span>&gt;
+                                                &lt;%# Eval("country_name") %&gt;
+                                            <span class="code-html">&lt;/div&gt;</span>
+                                        <span class="code-html">&lt;/ItemTemplate&gt;</span>
+                                    <span class="code-html">&lt;/asp:Repeater&gt;</span>
+            
+                                    <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"other-option"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+                                        Other :
+                                        <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">TextMode</span>=<span class="code-value">"SingleLine"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-dropdown-input"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Enter option"</span>&gt;
+                                        <span class="code-html">&lt;/asp:TextBox&gt;</span>
+                                    <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                <span class="code-html">&lt;/asp:Panel&gt;</span>
                             <span class="code-html">&lt;/div&gt;</span>
 
-                        <span class="code-html">&lt;/div&gt;</span>
-                    <span class="code-html">&lt;/form&gt;</span>
-                    </code></pre>
+                            <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span>&gt;
+                                    <span class="code-html">&lt;asp:Button</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-btn-submit"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"Submit"</span> /&gt;
+                                <span class="code-html">&lt;/div&gt;</span>
+                            <span class="code-html">&lt;/asp:Panel&gt;</span>
+                        <span class="code-html">&lt;/asp:Panel&gt;</span>
+                        </pre>
+                        </code>
                     </div>
                 </div>
 
@@ -547,42 +641,61 @@
                             <i class="bi bi-clipboard copyButton">Copy</i>
                         </div>
                         <pre><code class="codeBlock">
-                <span class="code-html">&lt;form</span> <span class="code-attr">class</span>=<span class="code-value">"form"</span><span class="code-html">&gt;</span>
-                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"form-cont"</span><span class="code-html">&gt;</span>
-
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"toggle-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Toggle Button<span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"toggleSwitch"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"toggle"</span> <span class="code-attr">class</span>=<span class="code-value">"radio-input-off"</span> <span class="code-attr">checked</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"toggle"</span> <span class="code-attr">class</span>=<span class="code-value">"radio-input-on"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"slide"</span><span class="code-html">&gt;&lt;/div&gt;</span>
-                                <span class="code-html">&lt;span</span> <span class="code-attr">class</span>=<span class="code-value">"toggleText"</span><span class="code-html">&gt;</span>OFF<span class="code-html">&lt;/span&gt;</span>
+                        <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+                            <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+                                <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"toggle-cont"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+                                    <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span>&gt;Toggle Button<span class="code-html">&lt;/label&gt;</span>
+                                    <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"toggleSwitch"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"toggle2"</span> <span class="code-attr">class</span>=<span class="code-value">"radio-input-off"</span> <span class="code-attr">checked</span> />
+                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"toggle2"</span> <span class="code-attr">class</span>=<span class="code-value">"radio-input-on"</span> />
+                                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"slide"</span>&gt;&lt;/div&gt;
+                                        <span class="code-html">&lt;asp:Label</span> <span class="code-attr">CssClass</span>=<span class="code-value">"toggleText"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"OFF"</span> /&gt;
+                                    <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                    <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"toggleSwitch"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"toggle1"</span> <span class="code-attr">class</span>=<span class="code-value">"radio-input-off"</span> <span class="code-attr">checked</span> />
+                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"toggle1"</span> <span class="code-attr">class</span>=<span class="code-value">"radio-input-on"</span> />
+                                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"slide"</span>&gt;&lt;/div&gt;
+                                        <span class="code-html">&lt;asp:Label</span> <span class="code-attr">CssClass</span>=<span class="code-value">"toggleText"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"OFF"</span> /&gt;
+                                    <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"toggle-cont"</span>&gt;
+                                    <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span>&gt;Medium Toggle Button<span class="code-html">&lt;/label&gt;</span>
+                                    <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"medium-toggleSwitch"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"medium-toggle2"</span> <span class="code-attr">class</span>=<span class="code-value">"medium-radio-input-off"</span> <span class="code-attr">checked</span> />
+                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"medium-toggle2"</span> <span class="code-attr">class</span>=<span class="code-value">"medium-radio-input-on"</span> />
+                                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"slide"</span>&gt;&lt;/div&gt;
+                                        <span class="code-html">&lt;asp:Label</span> <span class="code-attr">CssClass</span>=<span class="code-value">"medium-toggleText"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"OFF"</span> /&gt;
+                                    <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                    <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"medium-toggleSwitch"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"medium-toggle1"</span> <span class="code-attr">class</span>=<span class="code-value">"medium-radio-input-off"</span> <span class="code-attr">checked</span> />
+                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"medium-toggle1"</span> <span class="code-attr">class</span>=<span class="code-value">"medium-radio-input-on"</span> />
+                                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"slide"</span>&gt;&lt;/div&gt;
+                                        <span class="code-html">&lt;asp:Label</span> <span class="code-attr">CssClass</span>=<span class="code-value">"medium-toggleText"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"OFF"</span> /&gt;
+                                    <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                <span class="code-html">&lt;/div&gt;</span>
+                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"toggle-cont"</span>&gt;
+                                    <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span>&gt;Small Toggle Button<span class="code-html">&lt;/label&gt;</span>
+                                    <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"small-toggleSwitch"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"small-toggle2"</span> <span class="code-attr">class</span>=<span class="code-value">"small-radio-input-off"</span> <span class="code-attr">checked</span> />
+                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"small-toggle2"</span> <span class="code-attr">class</span>=<span class="code-value">"small-radio-input-on"</span> />
+                                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"slide"</span>&gt;&lt;/div&gt;
+                                        <span class="code-html">&lt;asp:Label</span> <span class="code-attr">CssClass</span>=<span class="code-value">"small-toggleText"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"OFF"</span> /&gt;
+                                    <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                    <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"small-toggleSwitch"</span> <span class="code-attr">required</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"small-toggle1"</span> <span class="code-attr">class</span>=<span class="code-value">"small-radio-input-off"</span> <span class="code-attr">checked</span> />
+                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"small-toggle1"</span> <span class="code-attr">class</span>=<span class="code-value">"small-radio-input-on"</span> />
+                                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"slide"</span>&gt;&lt;/div&gt;
+                                        <span class="code-html">&lt;asp:Label</span> <span class="code-attr">CssClass</span>=<span class="code-value">"small-toggleText"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"OFF"</span> /&gt;
+                                    <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                <span class="code-html">&lt;/div&gt;</span>
+                             <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span>&gt;
+                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span>&gt;
+                                <span class="code-html">&lt;asp:Button</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-btn-submit"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"Submit"</span> /&gt;
                             <span class="code-html">&lt;/div&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
-
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"toggle-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Medium Toggle Button<span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"medium-toggleSwitch"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"medium-toggle"</span> <span class="code-attr">class</span>=<span class="code-value">"medium-radio-input-off"</span> <span class="code-attr">checked</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"medium-toggle"</span> <span class="code-attr">class</span>=<span class="code-value">"medium-radio-input-on"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"slide"</span><span class="code-html">&gt;&lt;/div&gt;</span>
-                                <span class="code-html">&lt;span</span> <span class="code-attr">class</span>=<span class="code-value">"medium-toggleText"</span><span class="code-html">&gt;</span>OFF<span class="code-html">&lt;/span&gt;</span>
-                            <span class="code-html">&lt;/div&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
-
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"toggle-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Small Toggle Button<span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"small-toggleSwitch"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"medium-toggle"</span> <span class="code-attr">class</span>=<span class="code-value">"small-radio-input-off"</span> <span class="code-attr">checked</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"medium-toggle"</span> <span class="code-attr">class</span>=<span class="code-value">"small-radio-input-on"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"slide"</span><span class="code-html">&gt;&lt;/div&gt;</span>
-                                <span class="code-html">&lt;span</span> <span class="code-attr">class</span>=<span class="code-value">"small-toggleText"</span><span class="code-html">&gt;</span>OFF<span class="code-html">&lt;/span&gt;</span>
-                            <span class="code-html">&lt;/div&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
-
-                    <span class="code-html">&lt;/div&gt;</span>
-                <span class="code-html">&lt;/form&gt;</span>
-                </code></pre>
+                        <span class="code-html">&lt;/asp:Panel&gt;</span>
+                            <span class="code-html">&lt;/asp:Panel&gt;</span>
+                        </span>
+                    </code></pre>
                     </div>
                 </div>
 
@@ -659,52 +772,65 @@
                             <i class="bi bi-clipboard copyButton">Copy</i>
                         </div>
                         <pre><code class="codeBlock">
-                <span class="code-html">&lt;form</span> <span class="code-attr">class</span>=<span class="code-value">"form"</span><span class="code-html">&gt;</span>
-                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"form-cont"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Radio Have Others<span class="code-html">&lt;/label&gt;</span>
-                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"radio-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"radio-label"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"form-radio-group"</span> <span class="code-attr">value</span>=<span class="code-value">"op1"</span> <span class="code-attr">class</span>=<span class="code-value">"form-radio-op1"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                                Option 1
-                            <span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"radio-label"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"form-radio-group"</span> <span class="code-attr">value</span>=<span class="code-value">"op2"</span> <span class="code-attr">class</span>=<span class="code-value">"form-radio-op2"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                                Option 2
-                            <span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"radio-label"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"form-radio-group"</span> <span class="code-attr">value</span>=<span class="code-value">"other"</span> <span class="code-attr">class</span>=<span class="code-value">"form-radio-other"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                                Other
-                            <span class="code-html">&lt;/label&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
-                    <span class="code-html">&lt;/div&gt;</span>
+                        <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"from"</span> <span class="code-html">runat="server"&gt;</span>
+                            <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-html">runat="server"&gt;</span>
 
-                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-other-cont"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Text <span class="code-html">&lt;/label&gt;</span>
-                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"text"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-text"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span><span class="code-html">&gt;</span>
-                    <span class="code-html">&lt;/div&gt;</span>
+                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Radio Button<span class="code-html">&lt;/label&gt;</span>
+                                    <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"radio-cont"</span> <span class="code-html">runat="server"&gt;</span>
+                                        <span class="code-html">&lt;asp:PlaceHolder</span> <span class="code-attr">runat</span>=<span class="code-value">"server"&gt;</span>
+                                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"radio-label"</span><span class="code-html">&gt;</span>
+                                                 <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">class</span>=<span class="code-value">"form-radio-op1"</span> <span class="code-attr">name</span>=<span class="code-value">"form-radio-group"</span> <span class="code-attr">value</span>=<span class="code-value">"op1"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
+                                                Option 1
+                                            <span class="code-html">&lt;/label&gt;</span>
+                                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"radio-label"</span><span class="code-html">&gt;</span>
+                                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">class</span>=<span class="code-value">"form-radio-op2"</span> <span class="code-attr">name</span>=<span class="code-value">"form-radio-group"</span> <span class="code-attr">value</span>=<span class="code-value">"op2"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
+                                                Option 2
+                                            <span class="code-html">&lt;/label&gt;</span>
+                                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"radio-label"</span><span class="code-html">&gt;</span>
+                                               <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">class</span>=<span class="code-value">"form-radio-other"</span> <span class="code-attr">name</span>=<span class="code-value">"form-radio-group"</span> <span class="code-attr">value</span>=<span class="code-value">"Other"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
+                                                Others
+                                            <span class="code-html">&lt;/label&gt;</span>
+                                        <span class="code-html">&lt;/asp:PlaceHolder&gt;</span>
+                                    <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                <span class="code-html">&lt;/div&gt;</span>
 
-                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Radio Have Others<span class="code-html">&lt;/label&gt;</span>
-                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"radio-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"radio-label"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"form-radio-group"</span> <span class="code-attr">value</span>=<span class="code-value">"op1"</span> <span class="code-attr">class</span>=<span class="code-value">"form-radio-op1"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                                Option 1
-                            <span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"radio-label"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"form-radio-group"</span> <span class="code-attr">value</span>=<span class="code-value">"op2"</span> <span class="code-attr">class</span>=<span class="code-value">"form-radio-op2"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                                Option 2
-                            <span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"radio-label"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"form-radio-group"</span> <span class="code-attr">value</span>=<span class="code-value">"other"</span> <span class="code-attr">class</span>=<span class="code-value">"form-radio-other"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                                Other
-                            <span class="code-html">&lt;/label&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
-                    <span class="code-html">&lt;/div&gt;</span>
+                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-other-cont"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Text<span class="code-html">&lt;/label&gt;</span>
+                                    <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">TextMode</span>=<span class="code-value">"SingleLine"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-tb-text"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-html">runat="server"&gt;&lt;/asp:TextBox&gt;</span>
+                                <span class="code-html">&lt;/div&gt;</span>
 
-                    <span class="code-html">&lt;/div&gt;</span>
-                <span class="code-html">&lt;/form&gt;</span>
-                </code></pre>
+                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Radio Button<span class="code-html">&lt;/label&gt;</span>
+                                    <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"radio-cont"</span> <span class="code-html">runat="server"&gt;</span>
+                                        <span class="code-html">&lt;asp:PlaceHolder</span> <span class="code-attr">runat</span>=<span class="code-value">"server"&gt;</span>
+                                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"radio-label"</span><span class="code-html">&gt;</span>
+                                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"form-radio"</span> <span class="code-attr">required</span> <span class="code-attr">value</span>=<span class="code-value">"option1"</span><span class="code-html">&gt;</span>
+                                                Option 1
+                                            <span class="code-html">&lt;/label&gt;</span>
+                                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"radio-label"</span><span class="code-html">&gt;</span>
+                                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"form-radio"</span> <span class="code-attr">required</span> <span class="code-attr">value</span>=<span class="code-value">"option2"</span><span class="code-html">&gt;</span>
+                                                Option 2
+                                            <span class="code-html">&lt;/label&gt;</span>
+                                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"radio-label"</span><span class="code-html">&gt;</span>
+                                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"form-radio"</span> <span class="code-attr">required</span> <span class="code-attr">value</span>=<span class="code-value">"option3"</span><span class="code-html">&gt;</span>
+                                                Option 3
+                                            <span class="code-html">&lt;/label&gt;</span>
+                                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"radio-label"</span><span class="code-html">&gt;</span>
+                                               <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"radio"</span> <span class="code-attr">name</span>=<span class="code-value">"form-radio"</span> <span class="code-attr">required</span> <span class="code-attr">value</span>=<span class="code-value">"option4"</span><span class="code-html">&gt;</span>
+                                                Option 4
+                                            <span class="code-html">&lt;/label&gt;</span>
+                                        <span class="code-html">&lt;/asp:PlaceHolder&gt;</span>
+                                    <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                <span class="code-html">&lt;/div&gt;</span>
+                            <span class="code-html">&lt;/asp:Panel&gt;</span>
+                            <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-html">runat="server"&gt;</span>
+                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;asp:Button</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-btn-submit"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"Submit"</span> <span class="code-html">/&gt;</span>
+                                <span class="code-html">&lt;/div&gt;</span>
+                            <span class="code-html">&lt;/asp:Panel&gt;</span>
+                        <span class="code-html">&lt;/asp:Panel&gt;</span>
+                        </code></pre>
                     </div>
                 </div>
 
@@ -733,25 +859,18 @@
                                 </div>
                             </asp:Panel>
                             <div class="form-cont">
-                                <!-- Month -->
                                 <div class="input-cont">
                                     <label class="input-label">Month</label>
                                     <input type="month" id="txtMonth" name="txtMonth" class="form-tb-month" required />
                                 </div>
-
-                                <!-- Week -->
                                 <div class="input-cont">
                                     <label class="input-label">Week</label>
                                     <input type="week" id="txtWeek" name="txtWeek" class="form-tb-week" required />
                                 </div>
-
-                                <!-- Time -->
                                 <div class="input-cont">
                                     <label class="input-label">Time</label>
                                     <input type="time" id="txtTime" name="txtTime" class="form-tb-time" required />
                                 </div>
-
-                                <!-- Datetime-Local -->
                                 <div class="input-cont">
                                     <label class="input-label">Datetime-Local</label>
                                     <input type="datetime-local" id="txtDatetimeLocal" name="txtDatetimeLocal" class="form-tb-date-time" required />
@@ -773,54 +892,59 @@
                             <i class="bi bi-clipboard copyButton">Copy</i>
                         </div>
                         <pre><code class="codeBlock">
-                <span class="code-html">&lt;form</span> <span class="code-attr">action</span>=<span class="code-value">""</span> <span class="code-attr">class</span>=<span class="code-value">"form"</span><span class="code-html">&gt;</span>
-                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"form-cont"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Date<span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"date"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-date"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Separate Date<span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;div</span> <span class="code-attr">style</span>=<span class="code-value">"display: flex; gap: 5px;"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;select</span> <span class="code-attr">class</span>=<span class="code-value">"input-day"</span><span class="code-html">&gt;</span>
-                                    <span class="code-html">&lt;option</span> <span class="code-attr">value</span>=<span class="code-value">""</span><span class="code-html">&gt;</span>DD<span class="code-html">&lt;/option&gt;</span>
-                                <span class="code-html">&lt;/select&gt;</span>
-                                <span class="code-html">&lt;select</span> <span class="code-attr">class</span>=<span class="code-value">"input-month"</span><span class="code-html">&gt;</span>
-                                    <span class="code-html">&lt;option</span> <span class="code-attr">value</span>=<span class="code-value">""</span><span class="code-html">&gt;</span>MM<span class="code-html">&lt;/option&gt;</span>
-                                <span class="code-html">&lt;/select&gt;</span>
-                                <span class="code-html">&lt;select</span> <span class="code-attr">class</span>=<span class="code-value">"input-year"</span><span class="code-html">&gt;</span>
-                                    <span class="code-html">&lt;option</span> <span class="code-attr">value</span>=<span class="code-value">""</span><span class="code-html">&gt;</span>YYYY<span class="code-html">&lt;/option&gt;</span>
-                                <span class="code-html">&lt;/select&gt;</span>
-                            <span class="code-html">&lt;/div&gt;</span>
-                            <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"hidden"</span> <span class="code-attr">class</span>=<span class="code-value">"input-full-date"</span> <span class="code-attr">name</span>=<span class="code-value">"full_date"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
-                    <span class="code-html">&lt;/div&gt;</span>
+                            <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form"</span> <span class="code-html">runat="server"&gt;</span>
+                                <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-html">runat="server"&gt;</span>
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Date<span class="code-html">&lt;/label&gt;</span>
+                                        <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">ID</span>=<span class="code-value">"txtBirthdate"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-tb-date"</span> <span class="code-attr">required</span> <span class="code-attr">TextMode</span>=<span class="code-value">"Date"</span> <span class="code-html">/&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
 
-                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"form-cont"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Month<span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"month"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-month"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Separate Date<span class="code-html">&lt;/label&gt;</span>
+                                        <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"sepdate-cont"</span> <span class="code-html">runat="server"&gt;</span>
+                                            <span class="code-html">&lt;asp:DropDownList</span> <span class="code-attr">CssClass</span>=<span class="code-value">"input-day"</span> <span class="code-attr">required</span> <span class="code-html">runat="server"&gt;</span>
+                                                <span class="code-html">&lt;asp:ListItem</span> <span class="code-attr">Text</span>=<span class="code-value">"DD"</span> <span class="code-attr">Value</span>=<span class="code-value">""</span> <span class="code-html">/&gt;</span>
+                                            <span class="code-html">&lt;/asp:DropDownList&gt;</span>
+                                            <span class="code-html">&lt;asp:DropDownList</span> <span class="code-attr">CssClass</span>=<span class="code-value">"input-month"</span> <span class="code-attr">required</span> <span class="code-html">runat="server"&gt;</span>
+                                                <span class="code-html">&lt;asp:ListItem</span> <span class="code-attr">Text</span>=<span class="code-value">"MM"</span> <span class="code-attr">Value</span>=<span class="code-value">""</span> <span class="code-html">/&gt;</span>
+                                            <span class="code-html">&lt;/asp:DropDownList&gt;</span>
+                                            <span class="code-html">&lt;asp:DropDownList</span> <span class="code-attr">CssClass</span>=<span class="code-value">"input-year"</span> <span class="code-attr">required</span> <span class="code-html">runat="server"&gt;</span>
+                                                <span class="code-html">&lt;asp:ListItem</span> <span class="code-attr">Text</span>=<span class="code-value">"YYYY"</span> <span class="code-attr">Value</span>=<span class="code-value">""</span> <span class="code-html">/&gt;</span>
+                                            <span class="code-html">&lt;/asp:DropDownList&gt;</span>
+                                        <span class="code-html">&lt;/asp:Panel&gt;</span>
+                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"hidden"</span> <span class="code-attr">class</span>=<span class="code-value">"input-full-date"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-html">/&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
+                                <span class="code-html">&lt;/asp:Panel&gt;</span>
 
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Week<span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"week"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-week"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
+                                <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"form-cont"</span><span class="code-html">&gt;</span>
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Month<span class="code-html">&lt;/label&gt;</span>
+                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"month"</span> <span class="code-attr">id</span>=<span class="code-value">"txtMonth"</span> <span class="code-attr">name</span>=<span class="code-value">"txtMonth"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-month"</span> <span class="code-attr">required</span> <span class="code-html">/&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
 
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Time<span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"time"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-time"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Week<span class="code-html">&lt;/label&gt;</span>
+                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"week"</span> <span class="code-attr">id</span>=<span class="code-value">"txtWeek"</span> <span class="code-attr">name</span>=<span class="code-value">"txtWeek"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-week"</span> <span class="code-attr">required</span> <span class="code-html">/&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
 
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Datetime-Local<span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"datetime-local"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-date-time"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
-                    <span class="code-html">&lt;/div&gt;</span>
-                <span class="code-html">&lt;/form&gt;</span>
-            </code></pre>
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Time<span class="code-html">&lt;/label&gt;</span>
+                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"time"</span> <span class="code-attr">id</span>=<span class="code-value">"txtTime"</span> <span class="code-attr">name</span>=<span class="code-value">"txtTime"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-time"</span> <span class="code-attr">required</span> <span class="code-html">/&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
 
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Datetime-Local<span class="code-html">&lt;/label&gt;</span>
+                                        <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"datetime-local"</span> <span class="code-attr">id</span>=<span class="code-value">"txtDatetimeLocal"</span> <span class="code-attr">name</span>=<span class="code-value">"txtDatetimeLocal"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-date-time"</span> <span class="code-attr">required</span> <span class="code-html">/&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
+                                <span class="code-html">&lt;/div&gt;</span>
 
+                                <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-html">runat="server"&gt;</span>
+                                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                        <span class="code-html">&lt;asp:Button</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-btn-submit"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"Submit"</span> <span class="code-html">/&gt;</span>
+                                    <span class="code-html">&lt;/div&gt;</span>
+                                <span class="code-html">&lt;/asp:Panel&gt;</span>
+                            <span class="code-html">&lt;/asp:Panel&gt;</span>
+                            </code></pre>
                     </div>
                 </div>
 
@@ -830,13 +954,11 @@
                     <div class="style-exp">
                         <asp:Panel CssClass="form" runat="server">
                             <asp:Panel CssClass="form-cont" runat="server">
-                                <!-- Email Input -->
                                 <div class="input-cont">
                                     <label class="input-label">Email</label>
                                     <asp:TextBox ID="txtEmail" runat="server" CssClass="form-tb-email" placeholder="Sample placeholder" TextMode="Email" required="required" />
                                 </div>
 
-                                <!-- Search Input -->
                                 <div class="input-cont">
                                     <label class="input-label">Search</label>
                                     <div class="input-wrapper">
@@ -861,25 +983,31 @@
                             <i class="bi bi-clipboard copyButton">Copy</i>
                         </div>
                         <pre><code class="codeBlock">
-                <span class="code-html">&lt;form</span> <span class="code-attr">action</span>=<span class="code-value">""</span> <span class="code-attr">class</span>=<span class="code-value">"form"</span><span class="code-html">&gt;</span>
-                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"form-cont"</span><span class="code-html">&gt;</span>
+                     <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form"</span> <span class="code-html">runat="server"&gt;</span>
+                         <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-html">runat="server"&gt;</span>
 
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Email<span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"email"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-email"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
+                             <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                 <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Email<span class="code-html">&lt;/label&gt;</span>
+                                 <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">ID</span>=<span class="code-value">"txtEmail"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-tb-email"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">TextMode</span>=<span class="code-value">"Email"</span> <span class="code-attr">required</span>=<span class="code-value">"required"</span> <span class="code-html">/&gt;</span>
+                             <span class="code-html">&lt;/div&gt;</span>
 
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Search<span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-wrapper"</span><span class="code-html">&gt;</span>
-                                <span class="code-html">&lt;i</span> <span class="code-attr">class</span>=<span class="code-value">"bi bi-search"</span><span class="code-html">&gt;&lt;/i&gt;</span>
-                                <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"search"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-search"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;/div&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
+                             <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                 <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Search<span class="code-html">&lt;/label&gt;</span>
+                                 <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-wrapper"</span><span class="code-html">&gt;</span>
+                                     <span class="code-html">&lt;i</span> <span class="code-attr">class</span>=<span class="code-value">"bi bi-search"</span><span class="code-html">&gt;&lt;/i&gt;</span>
+                                     <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">ID</span>=<span class="code-value">"txtSearch"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-tb-search"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">TextMode</span>=<span class="code-value">"Search"</span> <span class="code-html">/&gt;</span>
+                                 <span class="code-html">&lt;/div&gt;</span>
+                             <span class="code-html">&lt;/div&gt;</span>
+                         <span class="code-html">&lt;/asp:Panel&gt;</span>
 
-                    <span class="code-html">&lt;/div&gt;</span>
-                <span class="code-html">&lt;/form&gt;</span>
-            </code></pre>
+                         <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-html">runat="server"&gt;</span>
+                             <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                 <span class="code-html">&lt;asp:Button</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-btn-submit"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"Submit"</span> <span class="code-html">/&gt;</span>
+                             <span class="code-html">&lt;/div&gt;</span>
+                         <span class="code-html">&lt;/asp:Panel&gt;</span>
+                     <span class="code-html">&lt;/asp:Panel&gt;</span>
+                    </code></pre>
+
 
                     </div>
                 </div>
@@ -888,13 +1016,10 @@
                     <div class="style-exp">
                         <asp:Panel CssClass="form" runat="server">
                             <asp:Panel CssClass="form-cont" runat="server">
-                                <!-- Password -->
                                 <div class="input-cont">
                                     <label class="input-label">Password</label>
                                     <asp:TextBox runat="server" CssClass="form-tb-password" TextMode="Password" placeholder="Sample placeholder" required="required" />
                                 </div>
-
-                                <!-- Confirm Password -->
                                 <div class="input-cont">
                                     <label class="input-label">Confirm Password</label>
                                     <asp:TextBox runat="server" CssClass="form-tb-confirm-password" TextMode="Password" placeholder="Sample placeholder" required="required" />
@@ -907,8 +1032,6 @@
                                     <p class="show-pass-text">Show Password</p>
                                 </label>
                             </asp:Panel>
-
-                            <!-- Submit Button -->
                             <asp:Panel CssClass="form-cont" runat="server">
                                 <div class="input-cont">
                                     <asp:Button CssClass="form-btn-submit" runat="server" Text="Submit" />
@@ -925,39 +1048,32 @@
                             <i class="bi bi-clipboard copyButton">Copy</i>
                         </div>
                         <pre><code class="codeBlock">
-                <span class="code-html">&lt;form</span> <span class="code-attr">action</span>=<span class="code-value">""</span> <span class="code-attr">class</span>=<span class="code-value">"form"</span><span class="code-html">&gt;</span>
-                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"form-cont"</span><span class="code-html">&gt;</span>
+                             <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form"</span> <span class="code-html">runat="server"&gt;</span>
+                                 <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-html">runat="server"&gt;</span>
+                                     <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                         <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Password<span class="code-html">&lt;/label&gt;</span>
+                                         <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-tb-password"</span> <span class="code-attr">TextMode</span>=<span class="code-value">"Password"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span>=<span class="code-value">"required"</span> /&gt;
+                                     <span class="code-html">&lt;/div&gt;</span>
+                                     <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                         <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Confirm Password<span class="code-html">&lt;/label&gt;</span>
+                                         <span class="code-html">&lt;asp:TextBox</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-tb-confirm-password"</span> <span class="code-attr">TextMode</span>=<span class="code-value">"Password"</span> <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span> <span class="code-attr">required</span>=<span class="code-value">"required"</span> /&gt;
+                                     <span class="code-html">&lt;/div&gt;</span>
+                                 <span class="code-html">&lt;/asp:Panel&gt;</span>
 
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Password<span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;input</span>
-                                <span class="code-attr">type</span>=<span class="code-value">"password"</span>
-                                <span class="code-attr">class</span>=<span class="code-value">"form-tb-password"</span>
-                                <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span>
-                                <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
+                                 <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-html">runat="server"&gt;</span>
+                                     <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-cb-label"</span><span class="code-html">&gt;</span>
+                                         <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"checkbox"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-show-password"</span> /&gt;
+                                         <span class="code-html">&lt;p</span> <span class="code-attr">class</span>=<span class="code-value">"show-pass-text"</span><span class="code-html">&gt;</span>Show Password<span class="code-html">&lt;/p&gt;</span>
+                                     <span class="code-html">&lt;/label&gt;</span>
+                                 <span class="code-html">&lt;/asp:Panel&gt;</span>
 
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>Confirm Password<span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;input</span>
-                                <span class="code-attr">type</span>=<span class="code-value">"password"</span>
-                                <span class="code-attr">class</span>=<span class="code-value">"form-tb-confirm-password"</span>
-                                <span class="code-attr">placeholder</span>=<span class="code-value">"Sample placeholder"</span>
-                                <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
-
-                    <span class="code-html">&lt;/div&gt;</span>
-
-                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"form-cont"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-cb-label"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"checkbox"</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-show-password"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;p</span> <span class="code-attr">class</span>=<span class="code-value">"show-pass-text"</span><span class="code-html">&gt;</span>Show Password<span class="code-html">&lt;/p&gt;</span>
-                        <span class="code-html">&lt;/label&gt;</span>
-                    <span class="code-html">&lt;/div&gt;</span>
-
-                <span class="code-html">&lt;/form&gt;</span>
-            </code></pre>
-
+                                 <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-html">runat="server"&gt;</span>
+                                     <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                         <span class="code-html">&lt;asp:Button</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-btn-submit"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"Submit"</span> /&gt;
+                                     <span class="code-html">&lt;/div&gt;</span>
+                                 <span class="code-html">&lt;/asp:Panel&gt;</span>
+                             <span class="code-html">&lt;/asp:Panel&gt;</span>
+                            </code></pre>
                     </div>
                 </div>
 
@@ -993,28 +1109,27 @@
                             <i class="bi bi-clipboard copyButton">Copy</i>
                         </div>
                         <pre><code class="codeBlock">
-                <span class="code-html">&lt;form</span> <span class="code-attr">action</span>=<span class="code-value">""</span> <span class="code-attr">class</span>=<span class="code-value">"form"</span><span class="code-html">&gt;</span>
-                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"form-cont"</span><span class="code-html">&gt;</span>
+                         <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form"</span> <span class="code-html">runat="server"&gt;</span>
+                             <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-html">runat="server"&gt;</span>
+                                 <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                     <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>File<span class="code-html">&lt;/label&gt;</span>
+                                     <span class="code-html">&lt;asp:FileUpload</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-tb-file"</span> <span class="code-attr">required</span> <span class="code-attr">name</span>=<span class="code-value">"file[]"</span> <span class="code-attr">AllowMultiple</span>=<span class="code-value">"true"</span> <span class="code-html">/&gt;</span>
+                                 <span class="code-html">&lt;/div&gt;</span>
 
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>File<span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;input</span>
-                                <span class="code-attr">type</span>=<span class="code-value">"file"</span>
-                                <span class="code-attr">class</span>=<span class="code-value">"form-tb-file"</span>
-                                <span class="code-attr">name</span>=<span class="code-value">"file[]"</span>
-                                <span class="code-attr">multiple</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
+                                 <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-file-list-cont"</span><span class="code-html">&gt;</span>
+                                     <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>List of Uploaded File<span class="code-html">&lt;/label&gt;</span>
+                                     <span class="code-html">&lt;ul</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-list"</span><span class="code-html">&gt;</span>
+                                     <span class="code-html">&lt;/ul&gt;</span>
+                                 <span class="code-html">&lt;/div&gt;</span>
+                             <span class="code-html">&lt;/asp:Panel&gt;</span>
 
-                        <span class="code-html">&lt;div</span>
-                            <span class="code-attr">class</span>=<span class="code-value">"input-file-list-cont"</span> <span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-label"</span><span class="code-html">&gt;</span>List of Uploaded File<span class="code-html">&lt;/label&gt;</span>
-                            <span class="code-html">&lt;ul</span> <span class="code-attr">class</span>=<span class="code-value">"form-tb-list"</span><span class="code-html">&gt;&lt;/ul&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
-
-                    <span class="code-html">&lt;/div&gt;</span>
-                <span class="code-html">&lt;/form&gt;</span>
-            </code></pre>
-
+                             <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-html">runat="server"&gt;</span>
+                                 <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                     <span class="code-html">&lt;asp:Button</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-btn-submit"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"Submit"</span> <span class="code-html">/&gt;</span>
+                                 <span class="code-html">&lt;/div&gt;</span>
+                             <span class="code-html">&lt;/asp:Panel&gt;</span>
+                         <span class="code-html">&lt;/asp:Panel&gt;</span>
+                        </code></pre>
                     </div>
                 </div>
                 <div class="container">
@@ -1041,19 +1156,20 @@
                             <i class="bi bi-clipboard copyButton">Copy</i>
                         </div>
                         <pre><code class="codeBlock">
-                <span class="code-html">&lt;form</span> <span class="code-attr">action</span>=<span class="code-value">""</span> <span class="code-attr">class</span>=<span class="code-value">"form"</span><span class="code-html">&gt;</span>
-                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"form-cont"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-cb-label"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;input</span>
-                                <span class="code-attr">type</span>=<span class="code-value">"checkbox"</span>
-                                <span class="code-attr">class</span>=<span class="code-value">"form-checkbox"</span>
-                                <span class="code-attr">required</span><span class="code-html">&gt;</span>
-                            Checkbox
-                        <span class="code-html">&lt;/label&gt;</span>
-                    <span class="code-html">&lt;/div&gt;</span>
-                <span class="code-html">&lt;/form&gt;</span>
-            </code></pre>
-
+                         <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form"</span> <span class="code-html">runat="server"&gt;</span>
+                             <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-html">runat="server"&gt;</span>
+                                 <span class="code-html">&lt;label</span> <span class="code-attr">class</span>=<span class="code-value">"input-cb-label"</span><span class="code-html">&gt;</span>
+                                     <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"checkbox"</span> <span class="code-attr">class</span>=<span class="code-value">"form-checkbox"</span> <span class="code-attr">required</span><span class="code-html">&gt;</span>
+                                     Checkbox
+                                 <span class="code-html">&lt;/label&gt;</span>
+                             <span class="code-html">&lt;/asp:Panel&gt;</span>
+                             <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-html">runat="server"&gt;</span>
+                                 <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                     <span class="code-html">&lt;asp:Button</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-btn-submit"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"Submit"</span><span class="code-html">/&gt;</span>
+                                 <span class="code-html">&lt;/div&gt;</span>
+                             <span class="code-html">&lt;/asp:Panel&gt;</span>
+                         <span class="code-html">&lt;/asp:Panel&gt;</span>
+                         </code></pre>
                     </div>
                 </div>
 
@@ -1078,25 +1194,17 @@
                             <i class="bi bi-clipboard copyButton">Copy</i>
                         </div>
                         <pre><code class="codeBlock">
-                <span class="code-html">&lt;form</span> <span class="code-attr">action</span>=<span class="code-value">""</span> <span class="code-attr">class</span>=<span class="code-value">"form"</span><span class="code-html">&gt;</span>
-                    <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"form-cont"</span><span class="code-html">&gt;</span>
-
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;input</span>
-                                <span class="code-attr">type</span>=<span class="code-value">"reset"</span>
-                                <span class="code-attr">class</span>=<span class="code-value">"form-btn-reset"</span>
-                                <span class="code-attr">value</span>=<span class="code-value">"Reset"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
-
-                        <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
-                            <span class="code-html">&lt;input</span>
-                                <span class="code-attr">type</span>=<span class="code-value">"submit"</span> <span class="code-attr">class</span>=<span class="code-value">"form-btn-submit"</span><span class="code-html">&gt;</span>
-                        <span class="code-html">&lt;/div&gt;</span>
-
-                    <span class="code-html">&lt;/div&gt;</span>
-                <span class="code-html">&lt;/form&gt;</span>
-            </code></pre>
-
+                         <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form"</span> <span class="code-html">runat="server"&gt;</span>
+                             <span class="code-html">&lt;asp:Panel</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-cont"</span> <span class="code-html">runat="server"&gt;</span>
+                                 <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                     <span class="code-html">&lt;input</span> <span class="code-attr">type</span>=<span class="code-value">"reset"</span> <span class="code-attr">class</span>=<span class="code-value">"form-btn-reset"</span> <span class="code-attr">value</span>=<span class="code-value">"Reset"</span><span class="code-html">/&gt;</span>
+                                 <span class="code-html">&lt;/div&gt;</span>
+                                 <span class="code-html">&lt;div</span> <span class="code-attr">class</span>=<span class="code-value">"input-cont"</span><span class="code-html">&gt;</span>
+                                     <span class="code-html">&lt;asp:Button</span> <span class="code-attr">CssClass</span>=<span class="code-value">"form-btn-submit"</span> <span class="code-attr">runat</span>=<span class="code-value">"server"</span> <span class="code-attr">Text</span>=<span class="code-value">"Submit"</span><span class="code-html">/&gt;</span>
+                                 <span class="code-html">&lt;/div&gt;</span>
+                             <span class="code-html">&lt;/asp:Panel&gt;</span>
+                         </span class="code-html">&lt;/asp:Panel&gt;</span>
+                         </code></pre>
                     </div>
                 </div>
 

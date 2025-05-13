@@ -1,19 +1,46 @@
 .dropdown-select,
-.dropdown-border-primary {
-  cursor: pointer;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  margin: 0 5px 0 5px;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #AFAFAF;
-  border-radius: 14px;
-  box-sizing: border-box;
-  align-content: center;
-  min-height: 50px;
-  width: 100%;
-  position: relative;
+.dropdown-select-other,
+.dropdown-border-primary{
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px 0 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #AFAFAF;
+    border-radius: 14px;
+    box-sizing: border-box;
+    align-content: center;
+    min-height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.select2-container--default .select2-selection--single {
+    text-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    margin: 0 5px !important;
+    padding: 10px !important;
+    font-size: 16px !important;
+    border: 1px solid #AFAFAF !important;
+    border-radius: 14px !important;
+    box-sizing: border-box !important;
+    min-height: 50px !important;
+    width: 100% !important;
+    position: relative !important;
+    background-color: white !important;
+    cursor: pointer !important;
+}
+
+.select2-dropdown {
+    margin-left: 6px !important;
+}
+
+.select2-selection {
+    flex-direction: row-reverse !important;
 }
 
 .dropdown-border-primary {
@@ -70,18 +97,19 @@
 }
 
 .dropdown-select,
+.dropdown-select-other,
 .dropdown-content {
-  flex: 1 1 calc(20% - 10px);
-  margin: 0 5px 0 5px;
-  padding: 10px;
-  font-size: 16px;
-  border: 1px solid #AFAFAF;
-  border-radius: 14px;
-  box-sizing: border-box;
-  outline-color: #66a3c9;
-  background-color: white;
-  align-content: center;
-  min-height: 50px;
+    flex: 1 1 calc(20% - 10px);
+    margin: 0 5px 0 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #AFAFAF;
+    border-radius: 14px;
+    box-sizing: border-box;
+    outline-color: #66a3c9;
+    background-color: white;
+    align-content: center;
+    min-height: 50px;
 }
 
 .dropdown-search {

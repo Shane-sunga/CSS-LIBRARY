@@ -8,7 +8,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%: Page.Title %></title>
     <link href="Content/style/styles.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
+    <style>
+.dropdown-select,
+.dropdown-select-other,
+.dropdown-border-primary{
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px 0 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #AFAFAF;
+    border-radius: 14px;
+    box-sizing: border-box;
+    align-content: center;
+    min-height: 50px;
+    width: 100%;
+    position: relative;
+}
+
+.select2-container--default .select2-selection--single {
+    text-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin: 0 5px !important;
+    padding: 10px !important;
+    font-size: 16px !important;
+    border: 1px solid #AFAFAF !important;
+    border-radius: 14px !important;
+    box-sizing: border-box !important;
+    min-height: 50px !important;
+    width: 100% !important;
+    position: relative !important;
+    background-color: white !important;
+    cursor: pointer !important;
+}
+
+.select2-dropdown {
+    margin-left: 6px !important;
+}
+
+.dropdown-border-primary {
+  border-color: #0077B6;
+  color: #0077B6;
+  width: 100%;
+}
+
+
+.dropdown {
+  position: relative;
+  flex: 1;
+  margin-bottom: 5px;
+  width: 100%;
+  min-width: 150px;
+}
+
+
+
+.dropdown-select p,
+.dropdown-select i {
+  padding-top: 2px;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  /* Ensure dropdown content matches the button width */
+  left: 0;
+  background: white;
+  border: 1px solid #ccc;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 100;
+}
+
+.dropdown-content::-webkit-scrollbar {
+  display: none;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.dropdown-item:hover {
+  background: #d1d1d1;
+  border-radius: 10px;
+  font-weight: 600;
+  margin-top: 2px;
+}
+
+.dropdown-select,
+.dropdown-select-other,
+.dropdown-content {
+    flex: 1 1 calc(20% - 10px);
+    margin: 0 5px 0 5px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #AFAFAF;
+    border-radius: 14px;
+    box-sizing: border-box;
+    outline-color: #66a3c9;
+    background-color: white;
+    align-content: center;
+    min-height: 50px;
+}
+
+.dropdown-search {
+  padding: 5px 10px 5px 32px;
+}
+
+
+
+.dropdown-options-other {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  margin: 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #AFAFAF;
+  border-radius: 14px;
+  box-sizing: border-box;
+  outline-color: #66a3c9;
+  background-color: white;
+  min-height: 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-options-other div {
+  padding: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-dropdown-input {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #AFAFAF;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline-color: white;
+
+}
+
+.dropdown-options-other div:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-options-other input {
+  flex: 1;
+  padding: 5px;
+  display: none;
+}
+
+.dropdown-options-other .other-option.selected input {
+  display: inline-block;
+}
+.form-tb-text:hover,
+.form-tb-middleName:hover,
+.form-tb-deci:hover,
+.iti:hover,
+.form-tb-middleInitial:hover,
+.form-tb-zipCode:hover,
+.form-tb-number:hover,
+.form-tb-date:hover,
+.form-btn-email:hover,
+.form-tb-password:hover,
+.form-tb-confirm-password:hover,
+.form-tb-select:hover,
+.form-tb-search:hover,
+.form-tb-url:hover,
+.form-tb-text-shuffle:hover,
+.form-tb-rangev,
+.form-tb-month:hover,
+.form-tb-weekv:hover,
+.form-tb-time:hover,
+.form-tb-text-lowerC:hover,
+.form-tb-date-time:hover,
+.form-tb-text-Capitalize:hover,
+.form-tb-range:hover,
+.form-tb-text-uppercase:hover,
+.form-tb-text-char:hover,
+.form-tb-file:hover,
+.dropdown-tb-other:hover{
+  box-shadow: 0px 0px 5px 0px rgb(226, 225, 225);
+  border: solid 1px #66a3c9;
+}
+
+.dropdown-tb-other{
+  flex: 1 1 calc(20% - 10px);
+  margin: 0 5px 0 5px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #AFAFAF;
+  border-radius: 14px;
+  box-sizing: border-box;
+  outline-color: #66a3c9;
+  background-color: white;
+  align-content: center;
+  min-height: 50px;
+}
+.dropdown-other-cont{
+  display: none;
+  flex-direction: column;
+  flex: 1;
+}
+.select2-selection{
+    flex-direction: row-reverse !important;
+}
+    </style>
 </head>
 <body>
     <form runat="server">
@@ -93,11 +314,140 @@
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         </asp:ContentPlaceHolder>
     </form>
+    <script>
+        $(document).ready(function () {
+         $('.searchable-dropdown').select2({
+             placeholder: "Select a country",
+             allowClear: true,
+             dropdownCssClass: "custom-selection",   // optional
+             containerCssClass: "custom-selection"   // optional
+         });
+        });
+
+        window.addEventListener("DOMContentLoaded", function () {
+            let dropdown = document.querySelector(".dropdown-select-other");
+            let otherInputContainer = document.querySelector(".dropdown-other-cont");
+
+            if (!dropdown || !otherInputContainer) return; // safety
+
+            function toggleOtherInput() {
+                if (dropdown.value === "Other") {
+                    otherInputContainer.style.display = "flex";
+                } else {
+                    otherInputContainer.style.display = "none";
+                }
+            }
+
+            // Initial state check
+            toggleOtherInput();
+
+            // On change event
+            dropdown.addEventListener("change", toggleOtherInput);
+        });
+        $('.form').each(function () {
+            const currentForm = $(this);
+
+            currentForm.find('.form-btn-submit').on('click', function (e) {
+                e.preventDefault();
+
+                let isValid = true;
+                currentForm.find('[required]').css('border', '');
+
+                currentForm.find('[required]').each(function () {
+                    const $field = $(this);
+
+                    // === ZIP CODE VALIDATION ===
+                    if ($field.hasClass('zip-input')) {
+                        const inputGroup = $field.closest('.input-group');
+                        if (!$field.val()) {
+                            inputGroup.css('border', '2px solid red');
+                            isValid = false;
+                        } else {
+                            inputGroup.css('border', '');
+                        }
+                    }
+
+                    if ($field.hasClass('dropdown-select') || $field.hasClass('form-dropdown-other')) {
+                        if (!$field.attr('data-value')) {
+                            $field.css('border', '2px solid red');
+                            isValid = false;
+                        }
+                    } else if (
+                        $field.hasClass('toggleSwitch') ||
+                        $field.hasClass('medium-toggleSwitch') ||
+                        $field.hasClass('small-toggleSwitch')
+                    ) {
+                        const isChecked = $field.find('input[type="radio"].radio-input-on, .medium-radio-input-on, .small-radio-input-on').is(':checked');
+                        if (!isChecked) {
+                            $field.css('border', '2px solid red');
+                            isValid = false;
+                        }
+                    } else if (!$field.val()) {
+                        $field.css('border', '2px solid red');
+                        isValid = false;
+                    }
+
+                    if ($field.is(':checkbox')) {
+                        if (!$field.is(':checked')) {
+                            $field.css('border', '2px solid red');
+                            isValid = false;
+                        } else {
+                            $field.css('border', '1px solid #d9d9d9');
+                        }
+                    }
+
+                    if ($field.is(':radio')) {
+                        const radioName = $field.attr('name');
+                        const radioGroup = currentForm.find(`input[name="${radioName}"]`);
+                        const isChecked = radioGroup.is(':checked');
+
+                        if (!isChecked) {
+                            radioGroup.each(function () {
+                                $(this).css('outline', '2px solid red');
+                            });
+                            isValid = false;
+                        } else {
+                            radioGroup.each(function () {
+                                $(this).css('outline', 'none');
+                            });
+                        }
+                    }
+
+                    if ($field.hasClass('form-tb-tel')) {
+                        const itiContainer = $field.closest('.iti');
+                        const iti = window.intlTelInputGlobals.getInstance($field[0]);
+                        if (!iti.isValidNumber()) {
+                            itiContainer.css('border', '2px solid red');
+                            isValid = false;
+                        } else {
+                            itiContainer.css('border', '');
+                        }
+                    }
+
+                    // === Select2 Validation ===
+                    if ($field.hasClass('searchable-dropdown')) {
+                        const value = $field.val();
+                        const select2Selection = $field.next('.select2-container').find('.select2-selection--single');
+                        if (!value) {
+                            select2Selection.attr('style', 'border: 2px solid red !important; ');
+                            isValid = false;
+                        } else {
+                            select2Selection.css('border', '');
+                        }
+                    }
+                });
+            });
+        });
+
+    </script>
+
 
     <script type="module" src="Scripts/js/script.js"></script>
     <script type="module" src="Scripts/js/dashboard.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 </body>
 </html>
