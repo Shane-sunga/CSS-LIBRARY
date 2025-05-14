@@ -465,7 +465,7 @@
 
                                 </div>
                                 <div class="dropdown-other-cont">
-                                    <label class="input-label">Text</label>
+                                    <label class="input-label">Other Option</label>
                                     <asp:TextBox TextMode="SingleLine" CssClass="dropdown-tb-other" placeholder="Sample placeholder" runat="server"></asp:TextBox>
                                 </div>
                             </asp:Panel>

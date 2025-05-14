@@ -11,6 +11,7 @@ import "./navbar.js";
 import "./container.js";
 import "./pagination.js";
 import "./dashboard.js"
+//import "./revised.js";
 
 
 function loadScript(scriptName) {
