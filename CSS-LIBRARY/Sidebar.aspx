@@ -9,19 +9,19 @@
                 <div class="sidebar" id="mySidebar">
                     <button class="close-btn">✖</button>
                     <h2>Sidebar</h2>
-                    <asp:HyperLink NavigateUrl="~/index.aspx" runat="server">Dashboard</asp:HyperLink><br />
-                    <asp:HyperLink NavigateUrl="~/alerts.aspx" runat="server">Alerts</asp:HyperLink><br />
-                    <asp:HyperLink NavigateUrl="~/buttons.aspx" runat="server">Buttons</asp:HyperLink><br />
-                    <asp:HyperLink NavigateUrl="~/cards.aspx" runat="server">Cards</asp:HyperLink><br />
-                    <asp:HyperLink NavigateUrl="~/containers.aspx" runat="server">Containers</asp:HyperLink><br />
-                    <asp:HyperLink NavigateUrl="~/Form.aspx" runat="server">Forms</asp:HyperLink><br />
-                    <asp:HyperLink NavigateUrl="~/loading.aspx" runat="server">Loadings</asp:HyperLink><br />
-                    <asp:HyperLink NavigateUrl="~/modal.aspx" runat="server">Modals</asp:HyperLink><br />
-                    <asp:HyperLink NavigateUrl="~/navbars.aspx" runat="server">Navbars</asp:HyperLink><br />
-                    <asp:HyperLink NavigateUrl="~/tables.aspx" runat="server">Table</asp:HyperLink><br />
-                    <asp:HyperLink NavigateUrl="~/textarea.aspx" runat="server">Textarea</asp:HyperLink><br />
-                    <asp:HyperLink NavigateUrl="~/label.aspx" runat="server">Label</asp:HyperLink><br />
-                    <asp:HyperLink NavigateUrl="~/sidebar.aspx" runat="server">Sidebar</asp:HyperLink><br />
+                    <asp:HyperLink NavigateUrl="~/index.aspx" runat="server">Dashboard</asp:HyperLink>
+                    <asp:HyperLink NavigateUrl="~/alerts.aspx" runat="server">Alerts</asp:HyperLink>
+                    <asp:HyperLink NavigateUrl="~/buttons.aspx" runat="server">Buttons</asp:HyperLink>
+                    <asp:HyperLink NavigateUrl="~/cards.aspx" runat="server">Cards</asp:HyperLink>
+                    <asp:HyperLink NavigateUrl="~/containers.aspx" runat="server">Containers</asp:HyperLink>
+                    <asp:HyperLink NavigateUrl="~/Form.aspx" runat="server">Forms</asp:HyperLink>
+                    <asp:HyperLink NavigateUrl="~/loading.aspx" runat="server">Loadings</asp:HyperLink>
+                    <asp:HyperLink NavigateUrl="~/modal.aspx" runat="server">Modals</asp:HyperLink>
+                    <asp:HyperLink NavigateUrl="~/navbars.aspx" runat="server">Navbars</asp:HyperLink>
+                    <asp:HyperLink NavigateUrl="~/tables.aspx" runat="server">Table</asp:HyperLink>
+                    <asp:HyperLink NavigateUrl="~/textarea.aspx" runat="server">Textarea</asp:HyperLink>
+                    <asp:HyperLink NavigateUrl="~/label.aspx" runat="server">Label</asp:HyperLink>
+                    <asp:HyperLink NavigateUrl="~/sidebar.aspx" runat="server">Sidebar</asp:HyperLink>
                 </div>
             </div>
         </div>
