@@ -11,7 +11,7 @@ namespace CSS_LIBRARY
 {
 
 
-    public partial class About
+    public partial class Dashboard
     {
     }
 }

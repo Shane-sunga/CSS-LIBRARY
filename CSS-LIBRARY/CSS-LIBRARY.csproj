@@ -133,7 +133,7 @@
     <Content Include="Content\style\pagination.css" />
     <Content Include="Content\style\revised.css" />
     <Content Include="Content\style\sidebar.css" />
-    <Content Include="Content\style\styles.css" />
+    <Content Include="Content\style\css-library-main-style.css" />
     <Content Include="Content\style\table.css" />
     <Content Include="Content\style\textarea.css" />
     <Content Include="Dashboard.aspx" />
@@ -191,7 +191,7 @@
     <Content Include="Scripts\js\radio-toggle.js" />
     <Content Include="Scripts\js\revised.js" />
     <Content Include="Scripts\js\script.js" />
-    <Content Include="Scripts\js\sidebar.js" />
+    <Content Include="Scripts\js\css-library-main-script.js" />
     <Content Include="Scripts\js\textarea.js" />
     <Content Include="Scripts\js\textbox.js" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
